@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"misaka18931.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Oops! This blog has been sakuzyo&#39;d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ZROI-220108 (day4)">
+<meta property="og:url" content="https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/index.html">
+<meta property="og:site_name" content="misaka18931&#39;s blog">
+<meta property="og:description" content="Oops! This blog has been sakuzyo&#39;d">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-24T21:11:48.000Z">
+<meta property="article:modified_time" content="2022-02-24T13:15:59.733Z">
+<meta property="article:author" content="misaka18931">
+<meta property="article:tag" content="Network Flow">
+<meta property="article:tag" content="sec">
+<meta property="article:tag" content="graph">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/","path":"2022/02/25/ZROI-220108-day4/","title":"ZROI-220108 (day4)"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>ZROI-220108 (day4) | misaka18931's blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">misaka18931's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">misaka18931</p>
+  <div class="site-description" itemprop="description">notes & problem solving</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ZROI-220108 (day4)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-24 21:11:48 / Modified: 13:15:59" itemprop="dateCreated datePublished" datetime="2022-02-24T21:11:48Z">2022-02-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ZROI/" itemprop="url" rel="index"><span itemprop="name">ZROI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="invalid password: the the correct passwd is likely to be 114514 characters long (or not?)" data-whm="decryption failure">
+  <script id="hbeData" type="hbeData" data-hmacdigest="5b3261843cf7183e7527e2d268599a093eee4175a0eb578b0cd2c1daea6062e3">25d278611a114276cd8f63ab05488a4e88b8b7499f643e20d7df8c8f065307bd2996c8485f0f5c39789cd01f998e4e5e97a4e59a3c7c0283ffaae709ef5d2ee8784a6e5dcbf94486dc8baf8b47866ebd254b58caace47dc074ffbaf05346d78d6a2cb22ced2db514c8f2d11adf55cb17317c7ab0360f2d5da738e1fa402c95671755e3f12a1cc604af18feca9778135abb647854691b0cdf7c5290481270a9fb23b7dcdecf703f909de475dca25cab53415915f61e02554d8276dd978151167d7fef9430c6591b78b349fc562c768dd238fd5b087e64786175af376edc78b398f52736977984dad9093e65693308e9313045155a35a0f0f87f3e1b5b444a707d8d3a980df4cdb1fd8879988ccba3c6ffda2469fad2b53dcf2d43969d821a45bdf39eee87260e4ff55520fda526f8ab2023c3e0713118c1104cfcbafadb03bf1676974afb97f194ed269318eb600880c133a885d21d1760c1355ccf3b58b77cf0b1730899f1b2f62aadff92c4789fb54aaa681342c809632ab9c7a448b9d774505129b6d342e03f4902b37764746a153de5c961d6aa2d5821ba62fc10cb44f5d6f019d2f5d1b9d5652ef50dee4f7c7eb00891dd3b2eaa70fdc09bb2153d130c807d6436283a12abbd8f41e17a5048dd7985fcf6d4443d2f0ee4cbcc1ed3dc909d2b283a45191356a371c010e32f61c6419b4d5456170e94c46a50b28f2f656b49e99c9f00e1914f194ce68735c40069558ff9cce95568b9c4bc69560266577b45244fc7668444625af7199bf8e8b5c6e28418f25fee3b996ca5ce576c54dc8d8ba454370be1625ca579b02d7046f0aacde1e4ec14fb79e51b6405cfb9ff82d6175e771c00b699d6bb5b535e97f5ad7e19cc975bb25c67553850aff406e78b71a0a0282cf694ba04434030f555fd2d1e65683443bc9528bb64b99c68dfbb6c8f583dc3179e9bb12f52477bf4a4465d671c7b92260eba9deda2263ae9b33a095734fbd1c9fa49720cb41276302f412c20c7eebe9e8ee2bbc689620936a7a06525cf23f0d94e1e49b91852a6a6df41656f98a07b5a86b95db37ba13c5283331939367d4e8f0f88314ece1f53c7a0a950cfe5197f43d70a644a06619575a87b667c798dfc2825245fa09cc60ecb33be8b4ebe2560ea8c1f06d1301fc0920801ab685a352a10390fcea238bc83a174c9e3ce42bb7c480d37277b9047176989ef3f4fd66f6be914eb1a9f2f7eec3a65954d996f48af86c18de6335194de640e6ef5b735711341794ef1aee260386212c0b708af8bb2507111fa56d776e7fb5dc8ce352fad947958cad36781be78d2b2c3756775d9939b0b00c5227c8f89a9c3f5fd090e7d56aa936a8b34be38068e03e892e40755a5cdad101faafdfc90868f5e0e138f4e0ef90cafcdb27e83362d67dc8bba327e46f2d4266fe654e608b9d1f177a042ebb3a5f6a2a67c85cb0d341c261f362e4978901606e13b9b5a2c66e788600a5c842c3140fcd75558e308149dad5f5a7fadbd575405ba47f20a75e93aa13b6ece4556695c5c365c75be37f5b4e9a8e75f01f53c954c3ca175ac8a731cdb7f92819fbaeb1b4738eaff073e431adf5b655250bf4e642eefaee558ae9db0221abb7b66a01cc8109b36099ef076ca17aec59bca54d7b9b68ac003a2775cbd1e7c7e3ca4ad02f53d6615b411d28b149d413975b9f4a5913baeaf43965e702e8ef293ef4fb3f774209ae468a0a15d450a5b66c367b446c1ca6578a2e37a4d37fb8cd7140db4ad492935c0b8a046bf5127ff07c127269c7beea0c0c654ff5745569ac79e0eb631ebb39b467324da1e2c6ca26a604950d84a2e8c5036b234e8fb93bcadd1e7e78d2056ab2a1efe7a7a02e356ae295a486bfa1bfc363783540e94d6596d7c032d8e33c94ff17ebc33bb02ad64b7400c8f597748f246ce1cb2c0952263ec9d0b7078657e81cb52bb82093ed62949102d900c6e8888dc82bc77b458ef3a4cb6717c2a79220c04877e4ae8c08817545870a37e389f16fde2b8b0b11614c329e87eb51ba0f02bd0403f29bdd365e633631b9b625531679a4bf2897ce92fbbeed6f744cb114a0090b350ad961cea20d66486c69f4528d45d6b48d30b252c97c6a4058d3932cd0df51eb2f5eab42e5c6648d9dc2d1f855d980c178de22c68799cbfccd13d4a00bf1dd4eed0e9c64ce403178e4b019f66866110871eb6e9ac5190ee852d9758a1ac3c389c8c926e74bc0534230727cb9a59d0ae5277366c87e0d8bad4d80217d1afd388066c267d9d01cc44e55bcca0c111985d9c27319d524497b6fe326c3490828e60aa10d12207127036c18485b2599061bc512ae426331abd8661b96d46c674a7560e2a8c7d369a37cdc9f0ddac7b2c055db95b57f516893d48d9f2394fe7353c7984a6feff6240b8f71d1fd3befc20d3a3bad97a91ca09d00fca1610686dce836dc6f5b4a26ec2ebc93090b993b5663f395da7b85da50d0af0c534707f0e289898eb686b5ec276958d426358f695d809f58db26664430b62bed1b6602100fe42402ba3120b74a2203777695b0216daeaeb7c68c6ca6dd1b45c339911296355affb938f480c60420638f3621fdbdb14598dd5fb1bee6e317802c7f57fd2f39082961583faf17881c5812b579d91e181842c2a1db0959405e06380a68dd7f8c395524c9151c4e79337afb17a90b405ed59732711aba888118effce4c32aa76cbeff769e757f4baf6d2a82d5ff85d052b8ff1541855630a8901f685c6b3a6e1d36fa48aa20e1591eac9154fb35fa370ad6f8742664bcde22bdecde1dee509935cbe21b0a1583fca191431f03a2fcd1e522fb7eaae2ea11ba3bcf0aed9e1c689e01e2d19ac1d3290d539c8ceb31235d361870e199f03c32491dffb4d1540a14ec14f784992ab940db5a3bf1a72fe235c1f7643d90dc3c5778ac8b8e023f3f1ba280b093e73c37dbaa1ee2831a8ecc22ced2fb36db9450f9d0529446ace1b3401460f4e708a76ec12cfa75b91697ab12cb755e3b49f37affadd65a0501a08fd5ee6dc11e696f784df5430df3772dc8a249a47293adbcf76f54e78388a0607e125a92644b0b4f40197fbc9e944f5cb1e8571f045ab1cd70a72dd35129c51d34d9ed46d917a24895d3a0de9e05dd1f36c5259d8e43f0440e81028528cbf45e6d35dbc473c0b58e02749c55ccba200df2853e705c13f856b54bb5d0631766e3b860ffef28b292d85d88176f95ee733cf63e25f15e94e7a71ec9cee6b64c4769d5b6591bf9500a242954776482560e44812486551caf26fcc1980637630d54e54fc83a941334c64b4c66d3a1531410e9b99e3ef8e92df902ede9a76f40e2a2fe7b94e28f3ef680ff206007d9a508ca739226cd3e290a415cd9e4d86e70821314c66b6098964d23ee10785e34ddebaa33d3278519d45c355b6d18c3e86a8dd7809a966a60e00008301c02a26f03c441c1c57d379ac5269ff7151b80eac5e2381a1c9a81f6647ce1feeb81a125e928bc386868655ba06e95160020a0877cf438baaf583c361279bf5d07693d4d0c8bb962a8379b440c2e5d1fabcf32554c10f2ace6f6ef39fd54fa1c97ae16595779178d2dbf347fa4bf2db28e2d08b74022dfdac1311c0b44ed385d447a255f31ff549ab8033502f901d8cd47450c1ad2336e16995b0169960463b2796cc1424402d30ed3a99a1e5b20850add5282be2735724d4877aa3f3c933a8acec0e1c54ff913ce19e0d46a1df5ed38276b93ae8012e1c81449c2a7e476105fd9991adbcd0f8f91c6e64e28d5feb850002a5572035176029fb78f66b525c5ac19d1b665df945e4dfadf8455ce8435cbf67375dea1ce186a4b7df36526ab2e5edbdd7f4bfa70abd40eae2544c1720cfa2d6f3adc40abacf3265366edeb15121d305946428222ed4493e20487157ddc6a923ec14e66416cad5fe86396d3beeba56dfc97413780424a5c91593ebfedc5b2bd88cf97a73db6ac0ce12ebcb0e07fe8b0d20bcf37a6cbed469b319c8395376e5a759d50afa2c1bdcc4c9a968ac9cc2362211e1adcdd8e19dda2990be28b2588b14851dda5cf8206985081567f56e32b60fe401184e57adf7e197656a85087d070e1c14d46259b803d47bd35ebebe3492c9bf514be6e1a8a50b586f2be54ded34f9976729d648dc85cae2d700535babced46e1f78fcde4e118fb8357985abd33eba5f55bf618a0cbdcc273b16943eeb7ebcc1fb21f3922be78a16b8aea404e368da50adb245bd64f75cc343c775f7f1b08193b0268c2389301b9bfe2707de416cb30c6c8b3cc45e343b1f09ec6d779b6d6a212045a1caf061025954a12832929e6e35c2cec5516762947a3135baaa27547094fafda169fc9f31dfa3ed0de42ca6d54ff0334589ae205f27098c551240363d22899b99aeee3b828bf181c79aa2d6133c52cfdd36e743ae8bbb1aa67c7711eb7ad4e8e7fd340c603ce3a6cdc13b2f9342899e217c16438657c4b8fcbdce2e738bb917f81deefa15e6b52ae29db6e411e4193262f99927088e598877a4a060c67d3db6bff7df0fb78e4853ec609d303a8d16c855a5c0ca2094afc5dfebce6e602883be47b86b41a3ebc0e2a5b3c3d0586077ca0b042bb5c8c6cd81afdfe6f449037b9e5d53d26a384d32890af2b0298c2316459ec88e9b8fcee56b1053c7b41071c71efae847ef84b3ebdd09395f6b848dd41933fc55a85dc7e1992a89b4bc834d827c1b8b400e9e07fccc20d9a4bb5cc994ad3571e296c6b7637915fe848735919c3e79e7b1f4d578451b2305d7a5a1f278003be09f679440ef891f5374d7861525a80f4cc2bd6d1fc6790089972c2a453a5ecdc100aade638db1af311ae7ce0c4554beec487caa687a8759830ca5dd029bf1c0cef1f44355e034ff0906c5fc96cbe77be12dd8f89d61d326998dbf457919223c782b8948a299fb3caf3f46eb569ed4bbaddb363b0b5a3492737312f3e77f700353eef48a7047c747bc2122f301183a92db82ccfe73fa6d9536475602bbf97768525ca3d8e6b523c223c607bddf932a6f79ade40f13c8813df187297df0f92e2d03d4814b9f0f0320e85abae7440b0668d5b7c84ff0419dfecc1a8653a6aef9d0c7ad168a13bd39d2bc4b3bc50fd88e932f5db6a51fca97ef817135899dad5a2ea4caea1a260beec56e4642e9fe01f66faf99d0e2548082bd856a8d7dd6ee2e8a2047cf227231e65177e597f89e90d4e78db78d6dcfca4976645679fbb6070f7b41b589bd9f6b9b21c7b92256ae3ab20b47be80f293ca706f2f3a454d0458e35fc255fb224dcf95d5f6b5b9f46f3032dbe5a95d6330213f0f3dc6ca840b461fd55a3e488e306dd701cb8286a399cafce515f416891c011fca63b2bb1f6fd6fda4cb34f3910e20811e2a5e75656b4b54bf2087ef9f8521353b7c205a2a55b2a9ad9411cefe7631f43603978cedbe6ece75a0accc913a5ed4d02f09cd662733650ab59e705de42660844db13d70b4053011b3021a65eb6b67d962201c40d48e6080f667fce78db206c8903f80a1f784ab993a684767d6f733d200e3a8de494fd8666c7f8977ca99e9ccd0de58016f1a53b20a60406ee6aad5d6f271d2e1c0dd25de1b688c5692803b7cfe6953feaf0a85d3b520700e157f26c7957609cc9a7bbe4eecd3cbcb98ebcc23f904ff448163e1c3c5c88d0bf375ccf7c9afd4cdc8f0c77c5dd2fdfbf2e6523300d7017bee102c316f430fbaa4b5444686bc66f7e3f1313ca017e4ae8778de5c1e734c6ee837e552b681d5a06a7cd8b0389f18c39edfbbee059a772fbc3cfa90209d53f7c31c21fe526ef818728109760760896310e8f59c0a4703f75eae0e3f7375ec0bac7041b8a246461ae201d08e2880ef0f33eb2bdee92cafcdead992fb41eafbb5e2f729aaa5bf581a9fc478a9aecbbf076576609175ce6067159da3878ad271b0ae8e4b9a26da767a98b1ee40dfe70905b255c2c9e6fb32a24f5832509127585ad31077502c8389879d19750c6dcbdf854b916fccf4e7c598dbb782edb189b7e7201bbec227066b0d9f733e30e9764550751616fedfb4ec07f3e0cd3834398b51ae4000cd13448de82f91b47452a864f9c5a9726f12f28bb443c5745a5d13b3287e96a052c61a38afde033965ebd070da1fa84b5d7ab4fe3b0f2129c06b9b2c3ddbac2ff752343395da9333f0ef401988f05793bc36f5d66caca8db0e58518f4dd3acabbc520e439a5262fa254fa4100afb9e94cb3d9c0e44bd2eaf5fba192b8dc682cbbad601d9911f2da31661f12ed00e9f26dfa75c1fa1b353167433ecc457177e461a18b63942a2dc17e0b6f7ce59a1a243ac0e42f1ddb36751d4ba8f5ea41fe62086479928e0584c3b8a9edb2d7ce89ec7247a93f3fd29d00126cdb84773cc8e9ebbc06027c294e8cad2455a680b4461f76d67763510185016f92cf14ef4ec29d18c8b1f59c503f1100ba44e3a81b5392c556c289041de284cf96128eeb033339f2932ee56feb38c1aabe51bbe2e63df1a42c6e63e8f5f6071dddf745b8acdbe67eed5137fd5a7da29d800cf9abc6074254e50e7aae697b925e079c021bf04ac6fe3ffa8abe19b4bfbed6554edd08f92a433134b1122e7f666ea5533fe63ac4ebdeba68b42c6a3104ed0e2b19bc21db9ba22309865b5e23c80b7a3ca234e5c5337a024a524fc7f01a62c26e34f7255438636105d45a7178a37b0cdfc07e2fa58bf3630b4a1b28b22904e9cfbce5a8297bce38b19901334d8aa33355155f40711177ae6081468e3a60e01fdebf690339ff6e946df6c2fffcf915e69f7dd89d38eb01364dcd537dfba6cb4d958c09f657699909aa2e5e17897f80e8ac63eb4ee6dd9e91800ad9685bfb31d29f103f121984bfdfe5486421019d41b0f2e6ff3e84b77e10b9003bc189d66d6d750ab06d3b3eebcfde775ade60efc67badb0a2cd1f484b5d56bff1a2c6cb4e2a16ca2943a95c166b0473251a96629be702d6ecd8db7e1a85182578925a84d5ae639f1404e517508a6010af29833e4424038bcf0336821815ceefe4e26c79e393809288af60391f92f882c43da1652cc85bee92d46547b9576acd3c4051ef46eabac71a380894ff8cb0a04fa87d710a1cf5818878a54dfbe</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">$ sudo decrypt</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>misaka18931
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/" title="ZROI-220108 (day4)">https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Network-Flow/" rel="tag"># Network Flow</a>
+              <a href="/tags/sec/" rel="tag"># sec</a>
+              <a href="/tags/graph/" rel="tag"># graph</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/02/25/passwd-impl-test/" rel="prev" title="passwd impl test">
+                  <i class="fa fa-chevron-left"></i> passwd impl test
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments gitalk-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">misaka18931</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"dac95c58ff58107e140f5ff1102bffd9"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>

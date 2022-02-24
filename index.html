@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"misaka18931.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="notes &amp; problem solving">
+<meta property="og:type" content="website">
+<meta property="og:title" content="misaka18931&#39;s blog">
+<meta property="og:url" content="https://misaka18931.github.io/index.html">
+<meta property="og:site_name" content="misaka18931&#39;s blog">
+<meta property="og:description" content="notes &amp; problem solving">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="misaka18931">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://misaka18931.github.io/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>misaka18931's blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">misaka18931's blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">misaka18931</p>
+  <div class="site-description" itemprop="description">notes & problem solving</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/25/ZROI-220108-day4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/25/ZROI-220108-day4/" class="post-title-link" itemprop="url">ZROI-220108 (day4)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-24 21:11:48 / Modified: 13:15:59" itemprop="dateCreated datePublished" datetime="2022-02-24T21:11:48Z">2022-02-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ZROI/" itemprop="url" rel="index"><span itemprop="name">ZROI</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          Oops! This blog has been sakuzyo'd
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/25/ZROI-220108-day4/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/25/passwd-impl-test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/25/passwd-impl-test/" class="post-title-link" itemprop="url">passwd impl test</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-02-24 16:00:08 / Modified: 12:56:40" itemprop="dateCreated datePublished" datetime="2022-02-24T16:00:08Z">2022-02-24</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          Oops! This blog has been sakuzyo'd
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/02/25/passwd-impl-test/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/23/Network-Flow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/23/Network-Flow/" class="post-title-link" itemprop="url">Network Flow</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-23 09:09:42" itemprop="dateCreated datePublished" datetime="2022-02-23T09:09:42Z">2022-02-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="implementation">Implementation</h2>
+<h3 id="dinic最大流">Dinic最大流</h3>
+<p>各种剪枝</p>
+<h3 id="dinic费用流">Dinic费用流</h3>
+<p>队列优化的bellman-ford, 实现时需要注意入队标记!</p>
+<h3 id="hlpp最大流">HLPP最大流</h3>
+<ol type="1">
+<li>用优先队列会多<span class="math inline">\(\log\)</span>. (<span
+class="math inline">\(O(n^2\sqrt m\log n)\)</span>)</li>
+<li>直接使用队列是<span class="math inline">\(O(n^3)\)</span>的.</li>
+<li>gap优化</li>
+<li>bfs确定初始高度.</li>
+</ol>
+<h2 id="建图">建图</h2>
+<h3 id="最大流">最大流</h3>
+<p>按照定义建图</p>
+<h3 id="最小割">最小割</h3>
+<ol type="1">
+<li>对于一条路径上的所有边, 是选择关系.</li>
+<li>通过连inf边, 实现各种约束条件.</li>
+</ol>
+<h3 id="二分图匹配">二分图匹配</h3>
+<p>在两个集合之间连接有向边即可.</p>
+<h3 id="最大权闭合子图">最大权闭合子图</h3>
+<p>提前计算所有正权点的贡献.</p>
+<p>运用最小割模型, source向正权点连 cap=权值 的边, 表示不选的代价;
+负权点向sink连 cap=|权值| 的边, 表示选择的代价.
+对原图中的边对应建一条inf边.</p>
+<p>发现合法的子图一定是一个割.</p>
+<h3 id="最小路径覆盖">最小路径覆盖</h3>
+<p>转化为二分图匹配: 每个点入度, 出度最多为1, 并且每连一条边, 入度,
+出度均+1. 将每个点拆成入点和出点跑二分图匹配.</p>
+<h2 id="网络流24题">网络流24题</h2>
+<h3 id="网络流-24-题搭配飞行员">#6000. 「网络流 24 题」搭配飞行员</h3>
+<p>二分图最大匹配.</p>
+<h3 id="网络流-24-题太空飞行计划">#6001. 「网络流 24
+题」太空飞行计划</h3>
+<p>转化为最大权闭合子图</p>
+<h3 id="网络流-24-题最小路径覆盖">#6002. 「网络流 24
+题」最小路径覆盖</h3>
+<p>最小路径覆盖</p>
+<h3 id="网络流-24-题魔术球">#6003. 「网络流 24 题」魔术球</h3>
+<p>增量网络流, 跑最小路径覆盖.</p>
+<h3 id="网络流-24-题圆桌聚餐">#6004. 「网络流 24 题」圆桌聚餐</h3>
+<p>最大流建图.</p>
+<h3 id="网络流-24-题最长递增子序列">#6005. 「网络流 24
+题」最长递增子序列</h3>
+<p>WA'ed QAQ ### #6006. 「网络流 24 题」试题库 最大流建图 ### #6007.
+「网络流 24 题」方格取数 最小割建图.(多变量选择)</p>
+<h3 id="网络流-24-题餐巾计划">#6008. 「网络流 24 题」餐巾计划</h3>
+<p>费用流建图</p>
+<h3 id="网络流-24-题软件补丁">#6009. 「网络流 24 题」软件补丁</h3>
+<p>不是网络流...</p>
+<h3 id="网络流-24-题数字梯形">#6010. 「网络流 24 题」数字梯形</h3>
+<p>费用流建图</p>
+<h3 id="网络流-24-题运输问题">#6011. 「网络流 24 题」运输问题</h3>
+<p>费用流建图</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/20/AGC040/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/20/AGC040/" class="post-title-link" itemprop="url">AGC040</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-19 17:09:47" itemprop="dateCreated datePublished" datetime="2022-02-19T17:09:47Z">2022-02-19</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/17/LOJ-tags-DP-Probability-Expectation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/17/LOJ-tags-DP-Probability-Expectation/" class="post-title-link" itemprop="url">LOJ targeted training: DP & Probability & Expectation</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-17 14:42:06" itemprop="dateCreated datePublished" datetime="2022-02-17T14:42:06Z">2022-02-17</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="loj定向练习dp-probability-expectation">LOJ定向练习(DP &amp;
+Probability &amp; Expectation)</h1>
+<h2 id="hnoi2015亚瑟王">#2112. 「HNOI2015」亚瑟王</h2>
+<p>如果直接对这个游戏过程DP, 是非常困难的,
+我们可以直接考虑终局时选择到每一张牌的概率.</p>
+<p>需要考虑两种情况: 1. 某一回合选的牌在他之前(不考虑他). 直接放到状态里
+2. 这张牌在前面和回合中已经用过了. 补集转化即可.</p>
+<h2 id="zjoi2015地震后的幻想乡">#2136. 「ZJOI2015」地震后的幻想乡</h2>
+<p>利用第k大数的期望公式(题目中给出), 枚举MST中瓶颈的大小, 乘上概率即可.
+容易求出MST<span class="math inline">\(\le k\)</span>的概率(子集DP),
+考虑差分转化.</p>
+<h2 id="zjoi2020传统艺能">#3312. 「ZJOI2020」传统艺能</h2>
+<p>考虑分别考虑每一个线段树上节点有标记的概率.
+利用线段树上定位区间的性质, 利用人类智慧+矩阵快速幂过题.</p>
+<h2 id="雅礼集训-2018-day1树">#6495. 「雅礼集训 2018 Day1」树</h2>
+<p>数据范围诈骗! 直接递推!</p>
+<h2 id="icpc-world-finals-2018绿宝石之岛">#6406. 「ICPC World Finals
+2018」绿宝石之岛</h2>
+<p>行列转置, 降低复杂度.</p>
+<h2 id="pkuwc2018随机游走">#2542. 「PKUWC2018」随机游走</h2>
+<p>关于树上随机游走问题:</p>
+<p>法一: 计算边权.
+期望距离依然具有可加性(考虑按照第一次经过中间点的时间划分)
+于是可以使用up and down trick算出每条有向边的期望长度.
+这样可求任意路径的长度.</p>
+<p>法二: 树形消元解方程 考虑从终点出发倒着进行,
+这样就可以列方程解出到每个点的期望. 树形消元的trick: 把起点当成根,
+把儿子设成父亲的线性函数, 这样就可以dfs求出每个点的系数, 由于根没有父亲,
+根的常数项就是答案.</p>
+<h2 id="shoi2017分手是祝愿">#2145. 「SHOI2017」分手是祝愿</h2>
+<p>利用算术基本定理, 把因数关系看成高维前缀和,
+剩下的部分就是一个一维的随机游走, 差分法解方程即可.</p>
+<h2 id="zjoi2019线段树">#3043. 「ZJOI2019」线段树</h2>
+<p>把操作1看成: 以<span
+class="math inline">\(\frac12\)</span>的概率决定是否进行操作, 就可以利用
+#3312 的方法做了.</p>
+<h2 id="雅礼集训-2018-day7c">#6509. 「雅礼集训 2018 Day7」C</h2>
+<p><strong>TODO</strong> 解方程!</p>
+<h2 id="山东二轮集训-day7鬼牌">#6118. 「2017 山东二轮集训
+Day7」鬼牌</h2>
+<p>推式子练习.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/16/JOI-2022-Final/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/16/JOI-2022-Final/" class="post-title-link" itemprop="url">JOI 2022 Final</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-16 11:16:21" itemprop="dateCreated datePublished" datetime="2022-02-16T11:16:21Z">2022-02-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="joi-2022-final">JOI 2022 Final</h1>
+<h2 id="joi-2022-final星际蛋糕推销"><a
+target="_blank" rel="noopener" href="https://loj.ac/p/3662">#3662. 「JOI 2022
+Final」星际蛋糕推销</a></h2>
+<p><del>implement useful algorithm</del></p>
+<h2 id="joi-2022-final自学"><a target="_blank" rel="noopener" href="https://loj.ac/p/3663">#3663. 「JOI
+2022 Final」自学</a></h2>
+<p>useful algorithm<span class="math inline">\(\times2\)</span>.</p>
+<h2 id="joi-2022-final选举"><a target="_blank" rel="noopener" href="https://loj.ac/p/3664">#3664. 「JOI
+2022 Final」选举</a></h2>
+<p>直接枚举最终一共有<span
+class="math inline">\(m\)</span>人在演讲.考虑当确定哪些city需要招人,
+另外哪些要拿到选票时, 一定是先把人招全, 再拿到剩下的选票更优.
+并且招人的顺序一定是按<span class="math inline">\(b_i\)</span>不减.</p>
+<p>于是按照<span class="math inline">\(b_i\)</span>排序,
+发现<strong>去掉只拿选票的城市以后,
+招到人的城市一定在剩余城市中构成一个前缀</strong>.</p>
+<p>定义<span class="math inline">\(f[n][k]\)</span>表示前<span
+class="math inline">\(n\)</span>个城市, <span
+class="math inline">\(k\)</span>个只拿选票的最短时间. <span
+class="math inline">\(O(n^2k)\)</span> DP.</p>
+<p>另外据说可以三分<span class="math inline">\(m\)</span>, 正确性不明.
+<a
+target="_blank" rel="noopener" href="https://codeforces.com/blog/entry/99837?#comment-886479">link</a></p>
+<h2 id="joi-2022-final铁路旅行-2"><a target="_blank" rel="noopener" href="https://loj.ac/p/3665">#3665.
+「JOI 2022 Final」铁路旅行 2</a></h2>
+<p>经典的倍增+维护可达区间. 这次转移需要用<code>RMQ</code>. <span
+class="math inline">\(O(n\log^2 n + q \log n)\)</span>, 空间2log 或
+<span class="math inline">\(O((n+q)\log^2 n)\)</span>, 空间1log.</p>
+<h2 id="joi-2022-final沙堡-2"><a target="_blank" rel="noopener" href="https://loj.ac/p/3666">#3666.
+「JOI 2022 Final」沙堡 2</a></h2>
+<p>idea: 1. 对于合法状态的判定,
+尝试把它写成一个对每一个元素相对独立的函数(即每个元素的贡献具有局部性),
+方便后续各种操作. 2. 扫描线</p>
+<p>考虑到对于每个数, 我们显然会走它在相邻格子中的前驱和后继,
+考虑连一条有向边, 这样一个矩形合法, 也就是成链, 当且仅当<span
+class="math inline">\(0\)</span>入度点只有<span
+class="math inline">\(1\)</span>个.</p>
+<p>而每个点的入度只在border在它附近的时候会变化.</p>
+<p>大力前缀和即可.</p>
+<p>做到<span class="math inline">\(O(H^2W)\)</span>需要枚举一维,
+用一个桶计数另一维.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/15/fun-facts-about-sequences/" class="post-title-link" itemprop="url">fun facts about sequences</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-15 14:29:33" itemprop="dateCreated datePublished" datetime="2022-02-15T14:29:33Z">2022-02-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/misc/" itemprop="url" rel="index"><span itemprop="name">misc</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol type="1">
+<li><p>一个和为<span class="math inline">\(0\)</span>的随机序列<span
+class="math inline">\(\{a_n\}\)</span>, <span
+class="math inline">\(E(\max_i(\sum_{j\le  i}a_j))=O(\sqrt N)\)</span>.
+常用于<code>DP</code>, 通过随机化降低时间.</p></li>
+<li><p>任意一个序列, 其中满足<span class="math inline">\(\max(A[l,r])\gt
+\max(A[l&#39;,r&#39;]),[l,r]\subsetneq
+[l&#39;,r&#39;]\)</span>的极大子段个数是<span
+class="math inline">\(O(n)\)</span>的. 求法: 单调栈</p></li>
+<li><p>对于一个排列, 对逆序对连边, 形成的连通块一定是区间.</p></li>
+<li><p>一个在<span
+class="math inline">\([0,1]\)</span>之间随机的实数序列, 长为<span
+class="math inline">\(n\)</span>, 则第k小数的期望 <span
+class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/15/AtCoder-Regular-Contest-135/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/15/AtCoder-Regular-Contest-135/" class="post-title-link" itemprop="url">AtCoder Regular Contest 135</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-15 13:56:35" itemprop="dateCreated datePublished" datetime="2022-02-15T13:56:35Z">2022-02-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-regular-contest-135"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks">AtCoder Regular Contest
+135</a></h1>
+<h2 id="d---add-to-square"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_d">D - Add to
+Square</a></h2>
+<p>考虑寻找不变式。</p>
+<p>发现<span
+class="math inline">\(r_i=\sum_{i,j}(-1)^{ij}A_{ij}\)</span>与<span
+class="math inline">\(c_j=\sum_{i,j}(-1)^{ij}A_{ij}\)</span>是不变的。充分性可以贪心消元构造。</p>
+<p>于是把每个数乘上<span
+class="math inline">\((-1)^{ij}\)</span>以后，就变成每行/列和不变。</p>
+<p>答案就是行/列的绝对值的和中更大的那个。</p>
+<h2 id="e---sequence-of-multiples"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_e">E - Sequence of
+Multiples</a></h2>
+<p>不妨设<span class="math inline">\(B_i=A_i/i\)</span>. 有递归式<span
+class="math inline">\(B_{i+1}=\lfloor \dfrac
+{iB_{i}}{i+1}\rfloor+1\)</span>. 至此通过枚举不同的<span
+class="math inline">\(B\)</span>可以做到<span
+class="math inline">\(O(\sqrt N)\)</span>. 发现可以继续差分， 令<span
+class="math inline">\(C_i=B_i-B_{i+1}\)</span>， 枚举<span
+class="math inline">\(C_i\)</span>可以做到<span
+class="math inline">\(O(\sqrt[3] N)\)</span>.</p>
+<h2 id="f---delete-1-4-7-..."><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_f">F - Delete 1,
+4, 7, ...</a></h2>
+<p>考虑通过<span
+class="math inline">\(f(x)=\lfloor1.5x\rfloor+1\)</span>来表示保留的数原来的位置.</p>
+<p>这样就可以用<span
+class="math inline">\(f^{(k)}(x)\)</span>通过复合计算出原来留下了哪些数.</p>
+<p>考虑当<span class="math inline">\(k\)</span>较大时, 最终剩下的数较少,
+可以直接暴力.</p>
+<p>当<span class="math inline">\(k\)</span>较小时, 需要考虑研究<span
+class="math inline">\(f\)</span>的性质: <span
+class="math inline">\(f^{(k)}(x+2^k)=f^{(k)}(x)+3^k\)</span>.</p>
+<p>然而<span class="math inline">\(O(k2^k)\)</span>的做法不能通过...,
+发现可以重复利用这个性质: <span
+class="math inline">\(f^{a+b}(x+2^b)=f^a(f^b(x)+3^b)\)</span></p>
+<p>内层是一堆形如<span class="math inline">\(a, a + c, a + 2c
+\dots\)</span>的数的点值. 倍增即可.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/08/Set-Power-Series/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/08/Set-Power-Series/" class="post-title-link" itemprop="url">Set Power Series</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-07 20:01:57" itemprop="dateCreated datePublished" datetime="2022-02-07T20:01:57Z">2022-02-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/notes/" itemprop="url" rel="index"><span itemprop="name">notes</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="集合幂级数及其运算">集合幂级数及其运算</h1>
+<h2 id="集合幂级数">集合幂级数</h2>
+<p>对于实值函数 <span class="math inline">\(f:U\rightarrow R\)</span>,
+定义集合幂级数<span class="math inline">\(F(z)=\sum_Sf(S)z^S\)</span>,
+其中<span class="math inline">\(z^S\)</span>满足<span
+class="math inline">\(z^S\cdot z^T=z^{S\cup T}\)</span>.</p>
+<h2 id="位运算卷积">位运算卷积</h2>
+<h3 id="fmt-子集求和">FMT (子集求和)</h3>
+<p>按位分治</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; i &lt;&lt;= <span class="number">1</span>)</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; N; j += i * <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; i + j; ++k)</span><br><span class="line">      f[k+i] += f[k];</span><br></pre></td></tr></table></figure>
+<p>FMT 满足如下性质:</p>
+<ol type="1">
+<li><span class="math inline">\(FMT(A)+FMT(B)=FMT(A+B)\)</span></li>
+<li><span class="math inline">\(FMT(A_B)=FMT(A)\cdot FMT(B)\)</span>,
+其中<span class="math inline">\([A_B]_i=\sum_{k|j=i}A_kB_j\)</span></li>
+</ol>
+<p>### IFMT (子集差分)</p>
+<p>FMT 的逆运算</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; i &lt;&lt;= <span class="number">1</span>)</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; N; j += i * <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; i + j; ++k)</span><br><span class="line">      f[k+i] -= f[k];</span><br></pre></td></tr></table></figure>
+<h2 id="集合幂级数运算">集合幂级数运算</h2>
+<h3 id="集合幂级数按占位拆分">集合幂级数按占位拆分</h3>
+<p><span
+class="math inline">\(F_i(z)=[u^i]\sum_Sf(S)z^Su^{|S|}\)</span></p>
+<h3 id="子集卷积">子集卷积</h3>
+<p><span class="math inline">\(H(z)=\sum_{S\cap
+T=\emptyset}[z^S]F(z)\cdot [z^T]G(z)z^{S\cup T}\)</span></p>
+<p>注意集合不交的条件, 可以改成<span
+class="math inline">\(|S|+|T|=|S\cup T|\)</span>,
+于是利用占位幂级数进行运算即可.</p>
+<p><span class="math display">\[
+\begin{aligned} H_k(z)&amp;=\sum_{i+j=k}F_i(z)G_j(z)\\
+FMT(H_k)&amp;= \sum_{i+j=k}FMT(F_i)FMT(G_j)\
+\end{aligned} \]</span> 交换求和次序, 对<span
+class="math inline">\(FMT\)</span>数组的每一项独立计算.</p>
+<p>记<span class="math inline">\(f_S(z)=\sum_k [FMT(F_k)]_Sz^k\)</span>,
+子集卷积实际上是 <span
+class="math inline">\(h_S(z)=f_S(z)g_S(z)\)</span>.</p>
+<h3 id="其他运算">其他运算</h3>
+<p><span class="math inline">\(\exp\)</span>, <span
+class="math inline">\(\ln\)</span>, 求逆, 多项式复合等运算,
+和刚才的分析同理. 对每一项占位多项式进行对应的操作即可.</p>
+<p><strong>note: exp将联通图转化为有多个联通分量的图,
+ln作为逆运算反之.</strong></p>
+<h3 id="关于半在线在线卷积">关于半在线/在线卷积</h3>
+<p>注意到<span
+class="math inline">\(O(n^2)\)</span>递推的方向是集合大小不断增加,
+下一层的值由前面层的答案组成, 天然支持在线.</p>
+<h2 id="eg">Eg</h2>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6719"
+class="uri">https://loj.ac/p/6719</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6729"
+class="uri">https://loj.ac/p/6729</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6730"
+class="uri">https://loj.ac/p/6730</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/2340"
+class="uri">https://loj.ac/p/2340</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/31/ARC134/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/31/ARC134/" class="post-title-link" itemprop="url">ARC134</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-31 11:58:29" itemprop="dateCreated datePublished" datetime="2022-01-31T11:58:29Z">2022-01-31</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-regular-contest-134"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134">AtCoder Regular Contest
+134</a></h1>
+<h2 id="e---modulo-nim"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134/tasks/arc134_e">E - Modulo
+Nim</a></h2>
+<p>现考虑<span class="math inline">\(m=2,3,4\)</span>的情况,
+发现必败局面要么是<span class="math inline">\(\{a:a\in
+A\}=\{4,8\}\)</span>, 要么所有的数都是<span
+class="math inline">\(12\)</span> 的倍数. 因为值域很小<span
+class="math inline">\(a_i\le 200\)</span> , 可以直接暴搜.</p>
+<p>(赛时没有推出<span class="math inline">\(m=3\)</span>的情况,
+没有利用值域性质)</p>
+<h2 id="f---flipping-coins"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134/tasks/arc134_f">F - Flipping
+Coins</a></h2>
+<ol type="1">
+<li><p>发现操作对环独立(ok)</p></li>
+<li><p><span
+class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增的区间,
+则每个偶数长的区间全部覆盖, 奇数长的区间会空出第一个位置.
+于是答案就是奇数长度区间的数量.</p></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">misaka18931</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
+
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"d1546d731a9f30cc80127d57142a482b"}</script>
+<script src="/js/third-party/comments/gitalk.js"></script>
+
+</body>
+</html>
