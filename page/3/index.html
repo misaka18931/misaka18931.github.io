@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -168,7 +168,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -197,6 +197,315 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/01/Hello-2022/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/01/Hello-2022/" class="post-title-link" itemprop="url">Hello 2022</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-01 00:00:57" itemprop="dateCreated datePublished" datetime="2022-01-01T00:00:57Z">2022-01-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/30/LibreOJ-575/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/30/LibreOJ-575/" class="post-title-link" itemprop="url">LibreOJ #575</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-29 17:17:54" itemprop="dateCreated datePublished" datetime="2021-12-29T17:17:54Z">2021-12-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="libreoj-noi-round-2不等关系"><a
+target="_blank" rel="noopener" href="https://loj.ac/p/575">「LibreOJ NOI Round #2」不等关系</a></h1>
+<p>题目描述：</p>
+<p>给定一个字符串，仅包含 <code>&lt;</code> 和 <code>&gt;</code>
+两种字符。你需要计算「使得<span
+class="math inline">\(p_i&lt;p_{i+1}\)</span><strong>当且仅当</strong>
+<span class="math inline">\(s_i\)</span>为 <code>&lt;</code> 的排列
+<span class="math inline">\(p_1,p_2,\dots p_n\)</span> 」的数量。</p>
+<p>考虑容斥：<code>&lt;</code>不满足即为<code>&gt;</code>满足，故原问题转化为求满足多个连续段递增的排列数目。</p>
+<p>利用<code>FFT</code>优化<code>DP</code>连续段即可。</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_0=&amp;1 \\
+f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
+{n\choose k} f_k
+\end{aligned}
+\]</span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/29/AtCoder-Regular-Contest-132/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/29/AtCoder-Regular-Contest-132/" class="post-title-link" itemprop="url">AtCoder Regular Contest 132</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-29 15:26:53" itemprop="dateCreated datePublished" datetime="2021-12-29T15:26:53Z">2021-12-29</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-regular-contest-132"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132">AtCoder Regular Contest
+132</a></h1>
+<h2 id="d---between-two-binary-strings"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_d">D - Between Two
+Binary Strings</a></h2>
+<p>notice the position of <span class="math inline">\(n\)</span>-th '1'
+in a valid string should always between that in both <code>s</code> and
+<code>t</code>.</p>
+<p>Yet this conclusion can be written in a more compact form: <span
+class="math inline">\(\forall i, \#s[1,i]=\#t[1,i]\)</span>.</p>
+<p>The problem can be solved greedily as long as the restrictions are
+meet.</p>
+<p>Proof:</p>
+<p>Consider a string to be a 2D path, where '0' means go forward and '1'
+means go up.</p>
+<p>Thus we need to minimize the turns we made.</p>
+<p>It's sufficient that we never make a turn unless we collide with the
+border.</p>
+<p><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28217621">Submission
+#28217621 - AtCoder Regular Contest 132</a></p>
+<h2 id="e---paw"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_e">E -
+Paw</a></h2>
+<p>Key: the resulting string always looks like this:
+<code>&lt;&lt;&lt;&lt;&lt;xxxxxxx&gt;&gt;&gt;&gt;&gt;&gt;</code>, where
+<code>x</code> stands for the original character.</p>
+<p>The key observation yields to a straight-forward <code>DP</code>
+solution.</p>
+<p><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28219119">Submission
+#28219119 - AtCoder Regular Contest 132</a></p>
+<h2 id="f---takahashi-the-strongest"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_f">F - Takahashi
+The Strongest</a></h2>
+<p>Let's find the probability distribution of all possible
+situations.</p>
+<p>Let <span
+class="math inline">\(\sigma:[0,2]^k\times[0,2]^k\rightarrow
+[0,3]^k\)</span> be the mappings from the strategy of 2 players to
+situations.</p>
+<p>Suppose <span class="math inline">\(s=\sigma(u,v)\)</span>, then</p>
+$$ s_i=
+<span class="math display">\[\begin{cases}
+3,u_i\neq v_i\\
+
+u_i,u_i=v_i
+\end{cases}\]</span>
+<p>$$</p>
+<p>We can calculate the probability distribution by convolution:</p>
+<p><span class="math display">\[
+Pr_s=\sum_{s=\sigma(u,v)}Aoki_uSnuke_v
+\]</span></p>
+<p>To implement that, we simply derive a new transform from
+<code>FWT</code>, which will work in <span
+class="math inline">\(O(k4^k)\)</span> time.</p>
+<p>Formally, Let <span
+class="math inline">\(F_s=\sum_{s=\sigma&#39;(u)}Aoki_u\)</span>, and
+<span
+class="math inline">\(G_s=\sum_{s=\sigma&#39;(u)}Snuke_u\)</span>.</p>
+<p>Notice in mapping <span class="math inline">\(\sigma&#39;\)</span>,
+every <span class="math inline">\(c\in[0,2]\)</span> points to both
+<span class="math inline">\(c\)</span> and <span
+class="math inline">\(3\)</span>.</p>
+<p>Then <span class="math inline">\(Pr_s=F_s \cdot G_s\)</span> yields
+naturally.</p>
+<p>To calculate the probability of Takahashi winning over all scenarios,
+we just need to perform a similar process.</p>
+<p><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28266429">Submission
+#28266429 - AtCoder Regular Contest 132</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -932,304 +1241,6 @@ f(k)=(n-k)!\sum_{u_1,u_2\dots u_k\in V}\prod_{i=1}^k|childs(u_i)|
 <p><a
 target="_blank" rel="noopener" href="https://codeforces.com/contest/1613/submission/137813335">submission:
 137813335</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/02/Codeforces-Global-Round-17/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/02/Codeforces-Global-Round-17/" class="post-title-link" itemprop="url">Codeforces Global Round 17</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-01 16:09:20" itemprop="dateCreated datePublished" datetime="2021-12-01T16:09:20Z">2021-12-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="codeforces-global-round-17"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1610">Codeforces Global Round
-17</a></h1>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/01/Deltix-Round-Autumn-2021-open-for-everyone-rated-Div-1-Div-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/01/Deltix-Round-Autumn-2021-open-for-everyone-rated-Div-1-Div-2/" class="post-title-link" itemprop="url">Deltix Round, Autumn 2021 (Div. 1 + Div. 2)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-01 15:23:05" itemprop="dateCreated datePublished" datetime="2021-12-01T15:23:05Z">2021-12-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1
-id="deltix-round-autumn-2021-open-for-everyone-rated-div.-1-div.-2"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609">Deltix Round, Autumn 2021
-(open for everyone, rated, Div. 1 + Div. 2)</a></h1>
-<h2 id="e.-william-the-oblivious"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609/problem/E">E. William The
-Oblivious</a></h2>
-<h3 id="solution-1-dynamic-divide-and-conquer-segment-tree">solution 1:
-(dynamic divide and conquer / segment tree)</h3>
-<p><span class="math display">\[
-\begin{aligned}
-Ans =&amp; \min_{l\le r}\{S[0,l)\#a+S[l,r)\#b+S[r,n)\#c\}  \\
-=&amp; \ S\#b+\min_{l\le r}\{S[0,l)\#(a-b)+S[r,n)\#(c-b)\}
-\end{aligned}
-\]</span></p>
-<p>线段树维护区间最小前缀、后缀、答案即可。</p>
-<h3 id="solution-2-ddp">solution 2: (DDP)</h3>
-<p>WIP</p>
-<p><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609/submission/137581443">submission</a></p>
-<h2 id="f.-interesting-sections"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609/problem/F">F. Interesting
-Sections</a></h2>
-<p><span class="math display">\[
-Ans=\sum_{l\le r}[\mathrm{popcnt}(\min\{a_l\dots a_r\}) =
-\mathrm{popcnt}(\max\\a_l\dots a_r\})]
-\]</span></p>
-<p>应用单调栈+线段树维护最大值个数。</p>
-<p>time: <span class="math inline">\(O(n\log \max a+n\log
-n)\)</span></p>
-<p>space: <span class="math inline">\(O(n)\)</span></p>
-<p><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609/submission/137318184">submission</a></p>
-<h2 id="g.-a-stroll-around-the-matrix"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1609/problem/G">G. A Stroll Around
-the Matrix</a></h2>
-<p>思路：先考虑静态问题，构造最优解/通过作差（微调法）将高维问题降维处理。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/01/Codeforces-Round-757-Div-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/01/Codeforces-Round-757-Div-2/" class="post-title-link" itemprop="url">Codeforces Round #757 (Div. 2)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-01 15:05:58" itemprop="dateCreated datePublished" datetime="2021-12-01T15:05:58Z">2021-12-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="codeforces-round-757-div.-2"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1614">Codeforces Round #757 (Div.
-2)</a></h1>
-<h2 id="d2---divan-and-kostomuksha"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1614/problem/D1">D2 - Divan and
-Kostomuksha</a></h2>
-<p>设计一维状态记录<span
-class="math inline">\(\gcd\)</span>即可。不整除的数将自动排在后面。</p>
-<p><span class="math display">\[
-dp_n=\max_{p\ is\ prime} \{dp_{pn} +\#[a_i|n]-\#[a_i|pn]\}
-\]</span></p>
-<p>time: <span class="math inline">\(O(n\log\log n)\)</span></p>
-<h2 id="e---divan-and-a-cottage"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1614/problem/E">E - Divan and a
-Cottage</a></h2>
-<p>线段树动态开点维护函数值。</p>
-<p>因为题目中函数单增，故可以使用定位区间的方式确定要修改的区间。</p>
-<p>time: <span class="math inline">\(O(n\log n)\)</span></p>
-<p>space: <span class="math inline">\(O(n\log n)\)</span></p>
-<p><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1614/submission/137577347">submission</a></p>
 
       
     </div>

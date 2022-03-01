@@ -9,6 +9,13 @@
 
 
     <url>
+        <loc>https://misaka18931.github.io/categories/ARC/</loc>
+        <lastmod>2022-03-01T10:05:55.811Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://misaka18931.github.io/categories/ZROI/</loc>
         <lastmod>2022-02-24T13:15:59.733Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -52,13 +59,6 @@
 
     <url>
         <loc>https://misaka18931.github.io/categories/ABC/</loc>
-        <lastmod>2022-02-24T12:56:40.869Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://misaka18931.github.io/categories/ARC/</loc>
         <lastmod>2022-02-24T12:56:40.869Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

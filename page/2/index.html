@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">48</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -168,7 +168,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-count">57</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -197,6 +197,363 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/15/AtCoder-Regular-Contest-135/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/15/AtCoder-Regular-Contest-135/" class="post-title-link" itemprop="url">AtCoder Regular Contest 135</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-15 13:56:35" itemprop="dateCreated datePublished" datetime="2022-02-15T13:56:35Z">2022-02-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-regular-contest-135"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks">AtCoder Regular Contest
+135</a></h1>
+<h2 id="d---add-to-square"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_d">D - Add to
+Square</a></h2>
+<p>考虑寻找不变式。</p>
+<p>发现<span
+class="math inline">\(r_i=\sum_{i,j}(-1)^{ij}A_{ij}\)</span>与<span
+class="math inline">\(c_j=\sum_{i,j}(-1)^{ij}A_{ij}\)</span>是不变的。充分性可以贪心消元构造。</p>
+<p>于是把每个数乘上<span
+class="math inline">\((-1)^{ij}\)</span>以后，就变成每行/列和不变。</p>
+<p>答案就是行/列的绝对值的和中更大的那个。</p>
+<h2 id="e---sequence-of-multiples"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_e">E - Sequence of
+Multiples</a></h2>
+<p>不妨设<span class="math inline">\(B_i=A_i/i\)</span>. 有递归式<span
+class="math inline">\(B_{i+1}=\lfloor \dfrac
+{iB_{i}}{i+1}\rfloor+1\)</span>. 至此通过枚举不同的<span
+class="math inline">\(B\)</span>可以做到<span
+class="math inline">\(O(\sqrt N)\)</span>. 发现可以继续差分， 令<span
+class="math inline">\(C_i=B_i-B_{i+1}\)</span>， 枚举<span
+class="math inline">\(C_i\)</span>可以做到<span
+class="math inline">\(O(\sqrt[3] N)\)</span>.</p>
+<h2 id="f---delete-1-4-7-..."><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc135/tasks/arc135_f">F - Delete 1,
+4, 7, ...</a></h2>
+<p>考虑通过<span
+class="math inline">\(f(x)=\lfloor1.5x\rfloor+1\)</span>来表示保留的数原来的位置.</p>
+<p>这样就可以用<span
+class="math inline">\(f^{(k)}(x)\)</span>通过复合计算出原来留下了哪些数.</p>
+<p>考虑当<span class="math inline">\(k\)</span>较大时, 最终剩下的数较少,
+可以直接暴力.</p>
+<p>当<span class="math inline">\(k\)</span>较小时, 需要考虑研究<span
+class="math inline">\(f\)</span>的性质: <span
+class="math inline">\(f^{(k)}(x+2^k)=f^{(k)}(x)+3^k\)</span>.</p>
+<p>然而<span class="math inline">\(O(k2^k)\)</span>的做法不能通过...,
+发现可以重复利用这个性质: <span
+class="math inline">\(f^{a+b}(x+2^b)=f^a(f^b(x)+3^b)\)</span></p>
+<p>内层是一堆形如<span class="math inline">\(a, a + c, a + 2c
+\dots\)</span>的数的点值. 倍增即可.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/08/Set-Power-Series/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/08/Set-Power-Series/" class="post-title-link" itemprop="url">Set Power Series</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-07 20:01:57" itemprop="dateCreated datePublished" datetime="2022-02-07T20:01:57Z">2022-02-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/notes/" itemprop="url" rel="index"><span itemprop="name">notes</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="集合幂级数及其运算">集合幂级数及其运算</h1>
+<h2 id="集合幂级数">集合幂级数</h2>
+<p>对于实值函数 <span class="math inline">\(f:U\rightarrow R\)</span>,
+定义集合幂级数<span class="math inline">\(F(z)=\sum_Sf(S)z^S\)</span>,
+其中<span class="math inline">\(z^S\)</span>满足<span
+class="math inline">\(z^S\cdot z^T=z^{S\cup T}\)</span>.</p>
+<h2 id="位运算卷积">位运算卷积</h2>
+<h3 id="fmt-子集求和">FMT (子集求和)</h3>
+<p>按位分治</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; i &lt;&lt;= <span class="number">1</span>)</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; N; j += i * <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; i + j; ++k)</span><br><span class="line">      f[k+i] += f[k];</span><br></pre></td></tr></table></figure>
+<p>FMT 满足如下性质:</p>
+<ol type="1">
+<li><span class="math inline">\(FMT(A)+FMT(B)=FMT(A+B)\)</span></li>
+<li><span class="math inline">\(FMT(A_B)=FMT(A)\cdot FMT(B)\)</span>,
+其中<span class="math inline">\([A_B]_i=\sum_{k|j=i}A_kB_j\)</span></li>
+</ol>
+<p>### IFMT (子集差分)</p>
+<p>FMT 的逆运算</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; N; i &lt;&lt;= <span class="number">1</span>)</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; N; j += i * <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = j; k &lt; i + j; ++k)</span><br><span class="line">      f[k+i] -= f[k];</span><br></pre></td></tr></table></figure>
+<h2 id="集合幂级数运算">集合幂级数运算</h2>
+<h3 id="集合幂级数按占位拆分">集合幂级数按占位拆分</h3>
+<p><span
+class="math inline">\(F_i(z)=[u^i]\sum_Sf(S)z^Su^{|S|}\)</span></p>
+<h3 id="子集卷积">子集卷积</h3>
+<p><span class="math inline">\(H(z)=\sum_{S\cap
+T=\emptyset}[z^S]F(z)\cdot [z^T]G(z)z^{S\cup T}\)</span></p>
+<p>注意集合不交的条件, 可以改成<span
+class="math inline">\(|S|+|T|=|S\cup T|\)</span>,
+于是利用占位幂级数进行运算即可.</p>
+<p><span class="math display">\[
+\begin{aligned} H_k(z)&amp;=\sum_{i+j=k}F_i(z)G_j(z)\\
+FMT(H_k)&amp;= \sum_{i+j=k}FMT(F_i)FMT(G_j)\
+\end{aligned} \]</span> 交换求和次序, 对<span
+class="math inline">\(FMT\)</span>数组的每一项独立计算.</p>
+<p>记<span class="math inline">\(f_S(z)=\sum_k [FMT(F_k)]_Sz^k\)</span>,
+子集卷积实际上是 <span
+class="math inline">\(h_S(z)=f_S(z)g_S(z)\)</span>.</p>
+<h3 id="其他运算">其他运算</h3>
+<p><span class="math inline">\(\exp\)</span>, <span
+class="math inline">\(\ln\)</span>, 求逆, 多项式复合等运算,
+和刚才的分析同理. 对每一项占位多项式进行对应的操作即可.</p>
+<p><strong>note: exp将联通图转化为有多个联通分量的图,
+ln作为逆运算反之.</strong></p>
+<h3 id="关于半在线在线卷积">关于半在线/在线卷积</h3>
+<p>注意到<span
+class="math inline">\(O(n^2)\)</span>递推的方向是集合大小不断增加,
+下一层的值由前面层的答案组成, 天然支持在线.</p>
+<h2 id="eg">Eg</h2>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6719"
+class="uri">https://loj.ac/p/6719</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6729"
+class="uri">https://loj.ac/p/6729</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/6730"
+class="uri">https://loj.ac/p/6730</a></p>
+<p><a target="_blank" rel="noopener" href="https://loj.ac/p/2340"
+class="uri">https://loj.ac/p/2340</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/31/ARC134/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/31/ARC134/" class="post-title-link" itemprop="url">ARC134</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-31 11:58:29" itemprop="dateCreated datePublished" datetime="2022-01-31T11:58:29Z">2022-01-31</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-regular-contest-134"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134">AtCoder Regular Contest
+134</a></h1>
+<h2 id="e---modulo-nim"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134/tasks/arc134_e">E - Modulo
+Nim</a></h2>
+<p>现考虑<span class="math inline">\(m=2,3,4\)</span>的情况,
+发现必败局面要么是<span class="math inline">\(\{a:a\in
+A\}=\{4,8\}\)</span>, 要么所有的数都是<span
+class="math inline">\(12\)</span> 的倍数. 因为值域很小<span
+class="math inline">\(a_i\le 200\)</span> , 可以直接暴搜.</p>
+<p>(赛时没有推出<span class="math inline">\(m=3\)</span>的情况,
+没有利用值域性质)</p>
+<h2 id="f---flipping-coins"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc134/tasks/arc134_f">F - Flipping
+Coins</a></h2>
+<ol type="1">
+<li><p>发现操作对环独立(ok)</p></li>
+<li><p><span
+class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增的区间,
+则每个偶数长的区间全部覆盖, 奇数长的区间会空出第一个位置.
+于是答案就是奇数长度区间的数量.</p></li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -870,315 +1227,6 @@ parallel binary search <a
 target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_d">AGC002 D -
 Stamp Rally</a></li>
 </ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/01/Hello-2022/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/01/01/Hello-2022/" class="post-title-link" itemprop="url">Hello 2022</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-01-01 00:00:57" itemprop="dateCreated datePublished" datetime="2022-01-01T00:00:57Z">2022-01-01</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/30/LibreOJ-575/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/30/LibreOJ-575/" class="post-title-link" itemprop="url">LibreOJ #575</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-29 17:17:54" itemprop="dateCreated datePublished" datetime="2021-12-29T17:17:54Z">2021-12-29</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="libreoj-noi-round-2不等关系"><a
-target="_blank" rel="noopener" href="https://loj.ac/p/575">「LibreOJ NOI Round #2」不等关系</a></h1>
-<p>题目描述：</p>
-<p>给定一个字符串，仅包含 <code>&lt;</code> 和 <code>&gt;</code>
-两种字符。你需要计算「使得<span
-class="math inline">\(p_i&lt;p_{i+1}\)</span><strong>当且仅当</strong>
-<span class="math inline">\(s_i\)</span>为 <code>&lt;</code> 的排列
-<span class="math inline">\(p_1,p_2,\dots p_n\)</span> 」的数量。</p>
-<p>考虑容斥：<code>&lt;</code>不满足即为<code>&gt;</code>满足，故原问题转化为求满足多个连续段递增的排列数目。</p>
-<p>利用<code>FFT</code>优化<code>DP</code>连续段即可。</p>
-<p><span class="math display">\[
-\begin{aligned}
-f_0=&amp;1 \\
-f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
-{n\choose k} f_k
-\end{aligned}
-\]</span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/29/AtCoder-Regular-Contest-132/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/29/AtCoder-Regular-Contest-132/" class="post-title-link" itemprop="url">AtCoder Regular Contest 132</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-29 15:26:53" itemprop="dateCreated datePublished" datetime="2021-12-29T15:26:53Z">2021-12-29</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/ARC/" itemprop="url" rel="index"><span itemprop="name">ARC</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="atcoder-regular-contest-132"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132">AtCoder Regular Contest
-132</a></h1>
-<h2 id="d---between-two-binary-strings"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_d">D - Between Two
-Binary Strings</a></h2>
-<p>notice the position of <span class="math inline">\(n\)</span>-th '1'
-in a valid string should always between that in both <code>s</code> and
-<code>t</code>.</p>
-<p>Yet this conclusion can be written in a more compact form: <span
-class="math inline">\(\forall i, \#s[1,i]=\#t[1,i]\)</span>.</p>
-<p>The problem can be solved greedily as long as the restrictions are
-meet.</p>
-<p>Proof:</p>
-<p>Consider a string to be a 2D path, where '0' means go forward and '1'
-means go up.</p>
-<p>Thus we need to minimize the turns we made.</p>
-<p>It's sufficient that we never make a turn unless we collide with the
-border.</p>
-<p><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28217621">Submission
-#28217621 - AtCoder Regular Contest 132</a></p>
-<h2 id="e---paw"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_e">E -
-Paw</a></h2>
-<p>Key: the resulting string always looks like this:
-<code>&lt;&lt;&lt;&lt;&lt;xxxxxxx&gt;&gt;&gt;&gt;&gt;&gt;</code>, where
-<code>x</code> stands for the original character.</p>
-<p>The key observation yields to a straight-forward <code>DP</code>
-solution.</p>
-<p><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28219119">Submission
-#28219119 - AtCoder Regular Contest 132</a></p>
-<h2 id="f---takahashi-the-strongest"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/tasks/arc132_f">F - Takahashi
-The Strongest</a></h2>
-<p>Let's find the probability distribution of all possible
-situations.</p>
-<p>Let <span
-class="math inline">\(\sigma:[0,2]^k\times[0,2]^k\rightarrow
-[0,3]^k\)</span> be the mappings from the strategy of 2 players to
-situations.</p>
-<p>Suppose <span class="math inline">\(s=\sigma(u,v)\)</span>, then</p>
-$$ s_i=
-<span class="math display">\[\begin{cases}
-3,u_i\neq v_i\\
-
-u_i,u_i=v_i
-\end{cases}\]</span>
-<p>$$</p>
-<p>We can calculate the probability distribution by convolution:</p>
-<p><span class="math display">\[
-Pr_s=\sum_{s=\sigma(u,v)}Aoki_uSnuke_v
-\]</span></p>
-<p>To implement that, we simply derive a new transform from
-<code>FWT</code>, which will work in <span
-class="math inline">\(O(k4^k)\)</span> time.</p>
-<p>Formally, Let <span
-class="math inline">\(F_s=\sum_{s=\sigma&#39;(u)}Aoki_u\)</span>, and
-<span
-class="math inline">\(G_s=\sum_{s=\sigma&#39;(u)}Snuke_u\)</span>.</p>
-<p>Notice in mapping <span class="math inline">\(\sigma&#39;\)</span>,
-every <span class="math inline">\(c\in[0,2]\)</span> points to both
-<span class="math inline">\(c\)</span> and <span
-class="math inline">\(3\)</span>.</p>
-<p>Then <span class="math inline">\(Pr_s=F_s \cdot G_s\)</span> yields
-naturally.</p>
-<p>To calculate the probability of Takahashi winning over all scenarios,
-we just need to perform a similar process.</p>
-<p><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/arc132/submissions/28266429">Submission
-#28266429 - AtCoder Regular Contest 132</a></p>
 
       
     </div>
