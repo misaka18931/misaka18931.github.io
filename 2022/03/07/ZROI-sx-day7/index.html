@@ -23,29 +23,30 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"misaka18931.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="Oops! This blog has been sakuzyo&#39;d">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ZROI contest day6">
-<meta property="og:url" content="https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/index.html">
+<meta property="og:title" content="ZROI sx contest day7">
+<meta property="og:url" content="https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/index.html">
 <meta property="og:site_name" content="misaka18931&#39;s blog">
 <meta property="og:description" content="Oops! This blog has been sakuzyo&#39;d">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-28T23:20:15.000Z">
-<meta property="article:modified_time" content="2022-03-01T10:05:55.811Z">
+<meta property="article:published_time" content="2022-03-07T09:21:50.000Z">
+<meta property="article:modified_time" content="2022-03-07T01:29:57.088Z">
 <meta property="article:author" content="misaka18931">
+<meta property="article:tag" content="FWT">
+<meta property="article:tag" content="segment tree">
 <meta property="article:tag" content="sec">
-<meta property="article:tag" content="sweep line">
-<meta property="article:tag" content="difference">
-<meta property="article:tag" content="elimination">
+<meta property="article:tag" content="randomize">
+<meta property="article:tag" content="divide and conquer FFT">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/">
+<link rel="canonical" href="https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/","path":"2022/03/01/ZROI-contest-day6/","title":"ZROI contest day6"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/","path":"2022/03/07/ZROI-sx-day7/","title":"ZROI sx contest day7"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>ZROI contest day6 | misaka18931's blog</title>
+<title>ZROI sx contest day7 | misaka18931's blog</title>
   
 
 
@@ -163,7 +164,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">48</span>
+          <span class="site-state-item-count">49</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -174,7 +175,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">57</span>
+        <span class="site-state-item-count">59</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -213,7 +214,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -226,7 +227,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          ZROI contest day6
+          ZROI sx contest day7
         </h1>
 
         <div class="post-meta-container">
@@ -236,16 +237,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-02-28 23:20:15" itemprop="dateCreated datePublished" datetime="2022-02-28T23:20:15Z">2022-02-28</time>
+      <time title="Created: 2022-03-07 09:21:50 / Modified: 01:29:57" itemprop="dateCreated datePublished" datetime="2022-03-07T09:21:50Z">2022-03-07</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-03-01 10:05:55" itemprop="dateModified" datetime="2022-03-01T10:05:55Z">2022-03-01</time>
-      </span>
 
   
 </div>
@@ -258,7 +253,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="invalid password: the the correct passwd is likely to be 114514 characters long (or not?)" data-whm="decryption failure">
-  <script id="hbeData" type="hbeData" data-hmacdigest="629c7f4ca011397f4a36c3d93aa309c1378c70d99d89781651458f53f435bf8e">25d278611a114276cd8f63ab05488a4e88b8b7499f643e20d7df8c8f065307bdb877766cf29b866c16536d079d62d499a852ab143b3bf5d53d98df78d223055834b4fd3038b362ef5ecde659025545d2571d26d70cc469f1553f4d7096a3ca438d1fc24a0cda24475529ac3eba5823f6cfb251dd5da8d053a9d642a72ffc1b218f37658d5f94d5bd4bb8b1dcfc4ebc21fc11b02489bfec2acab5d3c41a4683961303b10bad20e5a49d5202c85755bd54bbefed33205889fdde473a61dc6a4fbc384c6d3f1e5a99b1f2f7708a7863ec3550d49e34c076f675a1b362ba373a075607ce6af6d0c9fad7e6e223a5e6266ba128d43e05a1105b24c937b99a0829adb782e292d26867fc4314a7e9917f94af5719cc41f9be28460630b1b84186b1e7a1630cf157b499734313f532650b86dafd7b9379dff29d6f97a90ae5190531e282b760ef6bddc072f44761a4360594c1635ec095d3a45f70df4e831202b3c24cd3ec48b8135c926d5897454ce687b18872aadf116cec9aff3679661dc8007b2b12db8f31b57d9b2f7d70e404dcb9c483ccc951a38ffb67202321be61f8a2a616e49acd497b9af459160fb73079335054d561220697f2abdf60cb3052fe1461ab4e55896a5b0121af8e6806b000dcf80c7864156be72ec5ca02af083ce49b54d927f4880084b4360c61fb5d8094ded6fe4be337f1ff6e76e26b19066c85d73d8dcdc2ad6705bc2ab37e5568a2c18253574a4e90f8ac669242ba63d41ec40c35cfe38c42f69b65c9dfadc0d8ad7c4f466709d4d35a960bece47fc2980bca1f019938f25870753768d449013ffb06be777ae5c070971fb06540c22036006dba14175b17ad5cc963653cd2fb0c5589b9ca9cba5d2975318b7de45877b71ae307eddcdb86ab357298717de1f2a146cd0a68c704cd48f16f866e66d35431211e93f58952a0123af1b84bdcc50841eba774472bba3ae339d31a8d2e2a3437ce70c5512365367052b3f1271af0a41fa0483d09d7d50896664c96dd3fd92e7711e73fcd0beccc2b1ddf7e8878beebcf9bc9be75c2933f0d0b7e14a52e4c39fc86a7af5da67759f0f8a6227e2e0374fd5e9fd9d6b7bbe7907cfebf5c95f87273b6cc1f9202995db07fbc1ca69f4a6132f7d30265542680f8880bfe2c778a8e11c82609c83f3be9dc699ee152c6f8922b1dfb5ef90214d23a083d86e24d55340031053bb26f5281c7f3ef81b1506f23d97325bc78132b98ce9983c62658e50d756316589ab260e120bed0dce16892d89b1b6ed3bc247e2de14f8ed6653e3742cbd51fed9e98940f061a101ec1a7e4dc6166c225d9a4e1de64af87ef4316c920cf05268f8e222e4a08114b38649e3425459544ebe0f34242272824a4c4bc5e276569d10db6d50afaed4652a502d07f6388a70bf4cf026ed1a94bb2145281d60c342fa3a3a58e26d8f58a805a2fa7110209abe341eae778520eed4231b3946fb01dd228fc80e437457c062dcb03970f381eb2a0d8d52918592807b6a4759669aed2dd77c2109f8cf1e45defd8193a983661d096846c807fc334266cb2c84420c2be43732207a9f5f454ff175abe53bd3dc1ec62429da4b0f2b46039fa92d7193b30fd9b71b4a94d217a819441fa7fef80a24e499a1b557510a4f72145125c953ef71dbba44feb93dc451955d93764f232ad4c0f273f3ec114edcbe59b06e82ea46c54c5b65df9e741b19e3f7875e227a557c325f5b0f677b86a078bb1affd26d0e31d0e9ec5631e36038b41d8df1508b4ad7d6d3941ffc1386226af6eedc08459c04d8972058ca97650989e18fa4d7815fa61d166fcfc3e362b5b355334eea5571704dd0f4f196912d63f2080fa78f194bc7d055e4137a6ace3ad27a2c4e195c2871b011153f60c0bb2f380d3d7770556e13d8c0ff36e4622bc50c875eab8a6bf9ba551933eac1f8fb5bffa0448c239c4fd7f8475a04927dc96a229b78af3747ff07adf52372c5cc61256c59f55952cd781a27d1a9771685f5ee7a6c171585d5ceba645256f3260c69ad96bd508f37678597281f9f708de2d842190ec6f4e15db8b088382fe0e72c05a96144c253710f0850fbaf51800f701bb682894a856ce251281d0376054a5876ed346426ff151df02023f6e084796fc28287c6cfd425ec08ce6aaf98ed163af4c43499763487f2b7f832f907a02253ffd91d68a892cfd8f275d2f082f5724a180197c127a2b8d2686cc3274c91636bd427c48a30abed1da800e247afb867c014a1bde2df1eb879818158cd770d7978568c67c447dc578956c3fa77b2f6e71de885405e1db84b8766e93b4a8516abc16a769a5cd0c1485d4df38d4b5ea416f767307f848a87043fa2c226da431eaecefa5b1d85ac5df89fa032a03c783dffd18f6973b580c447f564d1bd42eb1c6224925f9fc236e4ef9e0033b0771a24eabf2b85e37cfcf05060a0be2c39a51d69a70d6d0534c44399efe3808741804f4ccc00dd2725a22393ea8b38f60dd798d0989752f1f42458cb5749cde1bb219b21ece8bccb9855b98ec1cac4d463de469b905c351567166e730a40b1767c6bf47224bfd2d4f4ebf6bfcd631c00d823e4c48002370d4852f35a0b15985a64b8d1d55a8990ff1a00ded1b7e4b9e1a49696c5a166e45e643c1ce3db02f8701d054e7a9cc2678e89d3e0738e676bc43ac56e1fbf008080a66ee5b6dbf7fcd6ff8f5352ef33c7ddec180ff23b553d7a0df549027e146e55438bfc840fcd1d178dcb80548df976d8bcbe9f1637aa9eaa8f7e26d388a68d5f6552069b030e49cb8631c27b4</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="f4885fbd6a4566af3ce7e576d877ebe157e4ab9382acee0387656697114def50">25d278611a114276cd8f63ab05488a4e88b8b7499f643e20d7df8c8f065307bdb877766cf29b866c16536d079d62d499ff3d631caa122e7cf7c0e561ec8fd84d73780225730fa1602fbc6126eea24bf86dbab48ea0e22584ceb09a5a22c7f35079c078db5aaa07e4e653171b5120b7a0a3d8cb202990e92f1563beb5420233cb8b2cb7cf6307fbd2a404320ab232443b4a160445fcd4f27050748db42dad31dd567d8ed4cbe63e6d375c984f330405ef1b1ef1f70fd74a01554943adc5ab5528173d8d8aeb647553114c7d46120a379084b5d893cfaedb7f8bcd25521bc43337bd921c6ce01bf480b325de452924fa2d9fdccf9273beab3337b618c43ec437b89e87a60f70d22368efde34381af123b92d0d3d54c925149189e834f7ed6395c8b754d0f6f3983cda9fac1666f68af758cffd16e78e2f14016d5509125037ece8a7008858e6823e75f8c6e1127689ec8b33f664edde806343f3d3bc55d0581e3473acc2088da3acd8aab79627d040314ef433183a9b07eae56c318353a090895df49c8e91dd08e00b729bc08f5ef8dcf07b374446f426608a0291bc016ddd511ae496081b850be0442b53122edf146a3ca788b71a4b4cd0c2d69024e4482265347afb94be598c146bb8c9144584b33cdf706ef17141307569cf335bd699879472b452235410eebd5448ca736105369fd6cd5c6c5b38cd41e4f1ee574b0d6d1ecf00b276e4a2c43da1a3704d74b6e6b976a312f22dba866c1ce111214a43ce3cbe</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -285,7 +280,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/" title="ZROI contest day6">https://misaka18931.github.io/2022/03/01/ZROI-contest-day6/</a>
+      <a href="https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/" title="ZROI sx contest day7">https://misaka18931.github.io/2022/03/07/ZROI-sx-day7/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-SA</a> unless stating additionally.
@@ -294,24 +289,22 @@
 </div>
 
           <div class="post-tags">
+              <a href="/tags/FWT/" rel="tag"># FWT</a>
+              <a href="/tags/segment-tree/" rel="tag"># segment tree</a>
               <a href="/tags/sec/" rel="tag"># sec</a>
-              <a href="/tags/sweep-line/" rel="tag"># sweep line</a>
-              <a href="/tags/difference/" rel="tag"># difference</a>
-              <a href="/tags/elimination/" rel="tag"># elimination</a>
+              <a href="/tags/randomize/" rel="tag"># randomize</a>
+              <a href="/tags/divide-and-conquer-FFT/" rel="tag"># divide and conquer FFT</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/02/25/ZROI-220108-day4/" rel="prev" title="ZROI-220108 (day4)">
-                  <i class="fa fa-chevron-left"></i> ZROI-220108 (day4)
+                <a href="/2022/03/02/AGC020/" rel="prev" title="AGC020">
+                  <i class="fa fa-chevron-left"></i> AGC020
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/03/01/AtCoder-Regular-Contest-136/" rel="next" title="AtCoder Regular Contest 136">
-                  AtCoder Regular Contest 136 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -370,7 +363,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"b9992648301bfe92a09f0ccd9f0657d3"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"7841a0e4d02f684470e908a15fa089ce"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
