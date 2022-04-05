@@ -88,54 +88,6 @@ f_{i-1}(x_0) + g_i(x)
       </tags>
   </entry>
   <entry>
-    <title>AGC problems</title>
-    <url>/2021/10/30/AGC-problems/</url>
-    <content><![CDATA[<h1 id="problem-c">Problem C</h1>
-<h3 id="agc038-c---lcms"><a
-href="https://atcoder.jp/contests/agc038/tasks/agc038_c">AGC038 C -
-LCMs</a></h3>
-<p>如果没有现成的数论函数来完成容斥，可以自己造一个！</p>
-<p>let</p>
-<p><span class="math display">\[
-\frac1n=\sum_{d|n}{f(d)}
-\]</span></p>
-<p><span class="math display">\[
-\begin{aligned}
-\textrm{lcm}{(x, y)} =&amp;\ \frac{xy}{\gcd(x,y)} \\
-=&amp;\ xy\sum_{d|x,y}{f(d)}
-\end{aligned}
-\]</span></p>
-<p><span class="math display">\[
-\mathrm{ans}(i)=\sum_{d|a_i}f(d)\sum_{j&lt;i}a_j[d\ |\ a_j]
-\]</span></p>
-<h3 id="agc040-c---neither-ab-nor-ba"><a
-href="https://atcoder.jp/contests/agc040/tasks/agc040_c">AGC040 C -
-Neither AB nor BA</a></h3>
-<p>将奇数位上<span class="math inline">\(A\rightarrow
-B\)</span>,将不能选<span class="math inline">\(AB\
-BA\)</span>转换成不能选<span class="math inline">\(AA\ BB\)</span>。</p>
-<p>结论：<span class="math inline">\(A\)</span>, <span
-class="math inline">\(B\)</span>各不能超过一半。</p>
-<h3 id="agc041-c---domino-quality"><a
-href="https://atcoder.jp/contests/agc041/tasks/agc041_c">AGC041 C -
-Domino Quality</a></h3>
-<p>大构造，人工智能。</p>
-<h3 id="agc035-c---skolem-xor-tree"><a
-href="https://atcoder.jp/contests/agc035/tasks/agc035_c">AGC035 C -
-Skolem XOR Tree</a></h3>
-<p>大构造x2</p>
-<p>根据样例提示，有<span
-class="math inline">\(\bigoplus_{i=1}^{2^k-1}i=1\)</span>。</p>
-<p>对于<span class="math inline">\(n=2^k\)</span>，只有一个第<span
-class="math inline">\(k\)</span>位出现，显然-1.</p>
-<p>对于<span class="math inline">\(n \&amp;1\)</span>，将大于<span
-class="math inline">\(2^{\mathrm{31-clz(n)}}-1\)</span>的部分按<span
-class="math inline">\((2k,2k+1)\)</span>分组。</p>
-<p>对于<span class="math inline">\(n \&amp;
-1=0\)</span>，特判前三个数，其余类似处理。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>AtCoder Beginner Contest 221</title>
     <url>/2021/10/07/ABC-221/</url>
     <content><![CDATA[<h1 id="atcoder-beginner-contest-221">AtCoder Beginner Contest 221</h1>
@@ -199,6 +151,54 @@ class="math inline">\(O(n\log n)\)</span></p>
       <categories>
         <category>AGC Series</category>
       </categories>
+  </entry>
+  <entry>
+    <title>AGC problems</title>
+    <url>/2021/10/30/AGC-problems/</url>
+    <content><![CDATA[<h1 id="problem-c">Problem C</h1>
+<h3 id="agc038-c---lcms"><a
+href="https://atcoder.jp/contests/agc038/tasks/agc038_c">AGC038 C -
+LCMs</a></h3>
+<p>如果没有现成的数论函数来完成容斥，可以自己造一个！</p>
+<p>let</p>
+<p><span class="math display">\[
+\frac1n=\sum_{d|n}{f(d)}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+\textrm{lcm}{(x, y)} =&amp;\ \frac{xy}{\gcd(x,y)} \\
+=&amp;\ xy\sum_{d|x,y}{f(d)}
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\mathrm{ans}(i)=\sum_{d|a_i}f(d)\sum_{j&lt;i}a_j[d\ |\ a_j]
+\]</span></p>
+<h3 id="agc040-c---neither-ab-nor-ba"><a
+href="https://atcoder.jp/contests/agc040/tasks/agc040_c">AGC040 C -
+Neither AB nor BA</a></h3>
+<p>将奇数位上<span class="math inline">\(A\rightarrow
+B\)</span>,将不能选<span class="math inline">\(AB\
+BA\)</span>转换成不能选<span class="math inline">\(AA\ BB\)</span>。</p>
+<p>结论：<span class="math inline">\(A\)</span>, <span
+class="math inline">\(B\)</span>各不能超过一半。</p>
+<h3 id="agc041-c---domino-quality"><a
+href="https://atcoder.jp/contests/agc041/tasks/agc041_c">AGC041 C -
+Domino Quality</a></h3>
+<p>大构造，人工智能。</p>
+<h3 id="agc035-c---skolem-xor-tree"><a
+href="https://atcoder.jp/contests/agc035/tasks/agc035_c">AGC035 C -
+Skolem XOR Tree</a></h3>
+<p>大构造x2</p>
+<p>根据样例提示，有<span
+class="math inline">\(\bigoplus_{i=1}^{2^k-1}i=1\)</span>。</p>
+<p>对于<span class="math inline">\(n=2^k\)</span>，只有一个第<span
+class="math inline">\(k\)</span>位出现，显然-1.</p>
+<p>对于<span class="math inline">\(n \&amp;1\)</span>，将大于<span
+class="math inline">\(2^{\mathrm{31-clz(n)}}-1\)</span>的部分按<span
+class="math inline">\((2k,2k+1)\)</span>分组。</p>
+<p>对于<span class="math inline">\(n \&amp;
+1=0\)</span>，特判前三个数，其余类似处理。</p>
+]]></content>
   </entry>
   <entry>
     <title>AGC002</title>
@@ -355,6 +355,21 @@ class="math inline">\(O(n\log n)\)</span>的状态数.</p>
       </categories>
   </entry>
   <entry>
+    <title>AGC020</title>
+    <url>/2022/03/02/AGC020/</url>
+    <content><![CDATA[<h1 id="section"></h1>
+]]></content>
+      <tags>
+        <tag>AGC Series</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AGC040</title>
+    <url>/2022/02/20/AGC040/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>ARC134</title>
     <url>/2022/01/31/ARC134/</url>
     <content><![CDATA[<h1 id="atcoder-regular-contest-134"><a
@@ -386,21 +401,6 @@ class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增�
       </categories>
       <tags>
         <tag>searching</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AGC040</title>
-    <url>/2022/02/20/AGC040/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
-    <title>AGC020</title>
-    <url>/2022/03/02/AGC020/</url>
-    <content><![CDATA[<h1 id="section"></h1>
-]]></content>
-      <tags>
-        <tag>AGC Series</tag>
       </tags>
   </entry>
   <entry>
@@ -751,17 +751,6 @@ href="https://www.luogu.com.cn/blog/adfgas/fou-dai-shan-di-chi-qu">参考博客<
       </tags>
   </entry>
   <entry>
-    <title>Codeforces Global Round 17</title>
-    <url>/2021/12/02/Codeforces-Global-Round-17/</url>
-    <content><![CDATA[<h1 id="codeforces-global-round-17"><a
-href="https://codeforces.com/contest/1610">Codeforces Global Round
-17</a></h1>
-]]></content>
-      <categories>
-        <category>CodeForces</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CCO &#39;21</title>
     <url>/2022/01/28/CCO-21/</url>
     <content><![CDATA[<h2 id="cco-2021换换排序"><a href="https://loj.ac/p/3577">「CCO
@@ -805,6 +794,17 @@ class="math inline">\(\mathrm{chkmin}(Ans_{e.u},
 class="math inline">\(\mathrm{chkmin}\)</span>, 不要直接赋值,
 因为可能再递归删除时得到了更小的答案.</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Codeforces Global Round 17</title>
+    <url>/2021/12/02/Codeforces-Global-Round-17/</url>
+    <content><![CDATA[<h1 id="codeforces-global-round-17"><a
+href="https://codeforces.com/contest/1610">Codeforces Global Round
+17</a></h1>
+]]></content>
+      <categories>
+        <category>CodeForces</category>
+      </categories>
   </entry>
   <entry>
     <title>Codeforces Round #738 (Div. 2)</title>
@@ -868,35 +868,6 @@ m)\)</span></p>
       </tags>
   </entry>
   <entry>
-    <title>Codeforces Round #747 (Div. 2)</title>
-    <url>/2021/10/09/Codeforces-Round-747-Div-2/</url>
-    <content><![CDATA[<h1 id="codeforces-round-747-div.-2"><a
-href="https://codeforces.com/contest/1594">Codeforces Round #747 (Div.
-2)</a></h1>
-<h3 id="f---ideal-farm"><a
-href="https://codeforces.com/contest/1594/problem/F">F - Ideal
-Farm</a></h3>
-<p>let <span class="math inline">\(s_i=\sum_{k\le i}a_i\)</span></p>
-<p>The Farm is ideal only if there exist <span
-class="math inline">\(s_i=s_j+k\)</span>.</p>
-<p>let <span class="math inline">\(t_i=s_i+k\)</span>, <span
-class="math inline">\(t_0=k\)</span></p>
-<p>The Farm is ideal only if for all possible <span
-class="math inline">\(\{a_n\}\)</span>, a <span
-class="math inline">\(s_i\)</span> coincides with <span
-class="math inline">\(t_j\)</span>.</p>
-<p>Since <span class="math inline">\(s_i,t_i \in[1, s + k]\)</span>, we
-can calculate the maximum possible <span
-class="math inline">\(n\)</span>.</p>
-]]></content>
-      <categories>
-        <category>CodeForces</category>
-      </categories>
-      <tags>
-        <tag>Pigeonhole principle</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Codeforces Round #757 (Div. 2)</title>
     <url>/2021/12/01/Codeforces-Round-757-Div-2/</url>
     <content><![CDATA[<h1 id="codeforces-round-757-div.-2"><a
@@ -928,6 +899,35 @@ href="https://codeforces.com/contest/1614/submission/137577347">submission</a></
         <tag>number theory</tag>
         <tag>DP: state design</tag>
         <tag>segment tree</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Codeforces Round #747 (Div. 2)</title>
+    <url>/2021/10/09/Codeforces-Round-747-Div-2/</url>
+    <content><![CDATA[<h1 id="codeforces-round-747-div.-2"><a
+href="https://codeforces.com/contest/1594">Codeforces Round #747 (Div.
+2)</a></h1>
+<h3 id="f---ideal-farm"><a
+href="https://codeforces.com/contest/1594/problem/F">F - Ideal
+Farm</a></h3>
+<p>let <span class="math inline">\(s_i=\sum_{k\le i}a_i\)</span></p>
+<p>The Farm is ideal only if there exist <span
+class="math inline">\(s_i=s_j+k\)</span>.</p>
+<p>let <span class="math inline">\(t_i=s_i+k\)</span>, <span
+class="math inline">\(t_0=k\)</span></p>
+<p>The Farm is ideal only if for all possible <span
+class="math inline">\(\{a_n\}\)</span>, a <span
+class="math inline">\(s_i\)</span> coincides with <span
+class="math inline">\(t_j\)</span>.</p>
+<p>Since <span class="math inline">\(s_i,t_i \in[1, s + k]\)</span>, we
+can calculate the maximum possible <span
+class="math inline">\(n\)</span>.</p>
+]]></content>
+      <categories>
+        <category>CodeForces</category>
+      </categories>
+      <tags>
+        <tag>Pigeonhole principle</tag>
       </tags>
   </entry>
   <entry>
@@ -1409,12 +1409,6 @@ href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOIS
       </tags>
   </entry>
   <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>JOI 2022 Final</title>
     <url>/2022/02/16/JOI-2022-Final/</url>
     <content><![CDATA[<h1 id="joi-2022-final">JOI 2022 Final</h1>
@@ -1468,6 +1462,12 @@ class="math inline">\(1\)</span>个.</p>
       </tags>
   </entry>
   <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>JOISC 2022</title>
     <url>/2022/04/05/JOISC-2022/</url>
     <content><![CDATA[<h2 id="day1">day1</h2>
@@ -1489,9 +1489,10 @@ remain valid.<br />
 exiets.<br />
 </li>
 <li>Reduce the edges to <span class="math inline">\(O(n\log n)\)</span>
-by binary lifting.<br />
-### kyoto<br />
-</li>
+by binary lifting.</li>
+</ol>
+<h3 id="kyoto">kyoto</h3>
+<ol type="1">
 <li>in a 2x2 grid, if <span class="math inline">\(A_2-A_1\lt B_2 -
 B_1\)</span>, we will never turn right at <span
 class="math inline">\((1,2)\)</span>.<br />
@@ -1509,10 +1510,12 @@ class="math inline">\(\frac{A_i -
 A_{\mathrm{prev}(i)}}{i-\mathrm{prev}(i)}\)</span> and the observation
 still works. ### misspelling<br />
 </li>
-<li><span class="math display">\[
-T_A = T_B \iff S_A=S_{A+1} \dots = S_B\ (A\lt B)\\
+<li>observation <span class="math display">\[
+T_A = T_B \iff S_A=S_{A+1} \dots = S_B\ (A\lt B)
+\]</span> <span class="math display">\[
 \text{let}\ x\ \text{be the first index between }[A, B] \text{ where }
-S_x \neq S_{x+1}.\\
+S_x \neq S_{x+1}.
+\]</span> <span class="math display">\[
 T_A \lt T_B \iff \begin{cases}
 S_x \lt S_{x+1} &amp; A \gt B\\
 S_x \gt S_{x+1} &amp; A \lt B
@@ -1531,12 +1534,12 @@ S_n = c]\)</span><br />
 <li>system test passed...<br />
 </li>
 <li>actually, count of all possible Operation B &amp; C combo is <span
-class="math inline">\(O(n^2\ln n)\)</span>.<br />
-### team<br />
-Elementary 3D partial order practice.<br />
-Can be implemented in <span class="math inline">\(O(n\log n)\)</span>
-time though.</li>
+class="math inline">\(O(n^2\ln n)\)</span>.</li>
 </ol>
+<h3 id="team">team</h3>
+<p>Elementary 3D partial order practice.<br />
+Can be implemented in <span class="math inline">\(O(n\log n)\)</span>
+time though.</p>
 <h2 id="day3">day3</h2>
 <h3 id="sprinkler">sprinkler</h3>
 <ol type="1">
