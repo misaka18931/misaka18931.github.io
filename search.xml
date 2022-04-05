@@ -114,45 +114,6 @@ g_{k,s}\leftarrow_{i\lt m} g_{k-i,s-kj}
       </categories>
   </entry>
   <entry>
-    <title>AGC001</title>
-    <url>/2021/10/09/AGC001/</url>
-    <content><![CDATA[<h1 id="atcoder-grand-contest-001"><a
-href="https://atcoder.jp/contests/agc001">AtCoder Grand Contest
-001</a></h1>
-<h3 id="problem-e"><a
-href="https://atcoder.jp/contests/agc001/tasks/agc001_e">Problem
-E</a></h3>
-<p>由于每个<span class="math inline">\((i,
-j)\)</span>对答案的贡献是<span
-class="math inline">\(a_i+b_i+a_j+b_j\choose
-a_i\)</span>,立即考虑单调路径模型。</p>
-<p>发现贡献可以看作<span class="math inline">\((-a_i, -b_i)
-\rightarrow(a_j, b_j)\)</span>。</p>
-<p>由于值域只有<span class="math inline">\(2e4\)</span>,
-直接对所有从第三象限到第一象限的路径DP即可。</p>
-<h3 id="f---wide-swap"><a
-href="https://atcoder.jp/contests/agc001/tasks/agc001_f">F - Wide
-Swap</a></h3>
-<p>通过计算pos数组，操作被转化为<span class="math inline">\(swap(pos_i,
-pos_{i+1})\)</span>仅当<span class="math inline">\(|pos_i-pos_{i+1}|\ge
-K\)</span>， 要求<span
-class="math inline">\(1,2,\ldots,n\)</span>贪心地在pos最前。</p>
-<p>显然，<span class="math inline">\(|pos_i-pos_j|\lt K\)</span>的<span
-class="math inline">\((i, j)\)</span>顺序不变。对所有这样的<span
-class="math inline">\((i,j)\)</span>从i向j连边，形成DAG。</p>
-<p>答案即是字典序最小的拓扑排序。</p>
-<p>考虑贪心地对没有出边的最大的点赋予更大的序号，这样的<span
-class="math inline">\(i\)</span>满足<span
-class="math inline">\(P_i=\underset{i-K+1\le j\le i+K-1}
-{\operatorname{argmax}} P_j\)</span>。</p>
-<p><code>priority_queue</code> + 线段树RMQ。<span
-class="math inline">\(O(n\log n)\)</span></p>
-]]></content>
-      <categories>
-        <category>AGC Series</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AGC problems</title>
     <url>/2021/10/30/AGC-problems/</url>
     <content><![CDATA[<h1 id="problem-c">Problem C</h1>
@@ -199,6 +160,45 @@ class="math inline">\((2k,2k+1)\)</span>分组。</p>
 <p>对于<span class="math inline">\(n \&amp;
 1=0\)</span>，特判前三个数，其余类似处理。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>AGC001</title>
+    <url>/2021/10/09/AGC001/</url>
+    <content><![CDATA[<h1 id="atcoder-grand-contest-001"><a
+href="https://atcoder.jp/contests/agc001">AtCoder Grand Contest
+001</a></h1>
+<h3 id="problem-e"><a
+href="https://atcoder.jp/contests/agc001/tasks/agc001_e">Problem
+E</a></h3>
+<p>由于每个<span class="math inline">\((i,
+j)\)</span>对答案的贡献是<span
+class="math inline">\(a_i+b_i+a_j+b_j\choose
+a_i\)</span>,立即考虑单调路径模型。</p>
+<p>发现贡献可以看作<span class="math inline">\((-a_i, -b_i)
+\rightarrow(a_j, b_j)\)</span>。</p>
+<p>由于值域只有<span class="math inline">\(2e4\)</span>,
+直接对所有从第三象限到第一象限的路径DP即可。</p>
+<h3 id="f---wide-swap"><a
+href="https://atcoder.jp/contests/agc001/tasks/agc001_f">F - Wide
+Swap</a></h3>
+<p>通过计算pos数组，操作被转化为<span class="math inline">\(swap(pos_i,
+pos_{i+1})\)</span>仅当<span class="math inline">\(|pos_i-pos_{i+1}|\ge
+K\)</span>， 要求<span
+class="math inline">\(1,2,\ldots,n\)</span>贪心地在pos最前。</p>
+<p>显然，<span class="math inline">\(|pos_i-pos_j|\lt K\)</span>的<span
+class="math inline">\((i, j)\)</span>顺序不变。对所有这样的<span
+class="math inline">\((i,j)\)</span>从i向j连边，形成DAG。</p>
+<p>答案即是字典序最小的拓扑排序。</p>
+<p>考虑贪心地对没有出边的最大的点赋予更大的序号，这样的<span
+class="math inline">\(i\)</span>满足<span
+class="math inline">\(P_i=\underset{i-K+1\le j\le i+K-1}
+{\operatorname{argmax}} P_j\)</span>。</p>
+<p><code>priority_queue</code> + 线段树RMQ。<span
+class="math inline">\(O(n\log n)\)</span></p>
+]]></content>
+      <categories>
+        <category>AGC Series</category>
+      </categories>
   </entry>
   <entry>
     <title>AGC002</title>
@@ -364,12 +364,6 @@ class="math inline">\(O(n\log n)\)</span>的状态数.</p>
       </tags>
   </entry>
   <entry>
-    <title>AGC040</title>
-    <url>/2022/02/20/AGC040/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>ARC134</title>
     <url>/2022/01/31/ARC134/</url>
     <content><![CDATA[<h1 id="atcoder-regular-contest-134"><a
@@ -402,6 +396,12 @@ class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增�
       <tags>
         <tag>searching</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>AGC040</title>
+    <url>/2022/02/20/AGC040/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>About</title>
@@ -868,6 +868,35 @@ m)\)</span></p>
       </tags>
   </entry>
   <entry>
+    <title>Codeforces Round #747 (Div. 2)</title>
+    <url>/2021/10/09/Codeforces-Round-747-Div-2/</url>
+    <content><![CDATA[<h1 id="codeforces-round-747-div.-2"><a
+href="https://codeforces.com/contest/1594">Codeforces Round #747 (Div.
+2)</a></h1>
+<h3 id="f---ideal-farm"><a
+href="https://codeforces.com/contest/1594/problem/F">F - Ideal
+Farm</a></h3>
+<p>let <span class="math inline">\(s_i=\sum_{k\le i}a_i\)</span></p>
+<p>The Farm is ideal only if there exist <span
+class="math inline">\(s_i=s_j+k\)</span>.</p>
+<p>let <span class="math inline">\(t_i=s_i+k\)</span>, <span
+class="math inline">\(t_0=k\)</span></p>
+<p>The Farm is ideal only if for all possible <span
+class="math inline">\(\{a_n\}\)</span>, a <span
+class="math inline">\(s_i\)</span> coincides with <span
+class="math inline">\(t_j\)</span>.</p>
+<p>Since <span class="math inline">\(s_i,t_i \in[1, s + k]\)</span>, we
+can calculate the maximum possible <span
+class="math inline">\(n\)</span>.</p>
+]]></content>
+      <categories>
+        <category>CodeForces</category>
+      </categories>
+      <tags>
+        <tag>Pigeonhole principle</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Codeforces Round #757 (Div. 2)</title>
     <url>/2021/12/01/Codeforces-Round-757-Div-2/</url>
     <content><![CDATA[<h1 id="codeforces-round-757-div.-2"><a
@@ -899,35 +928,6 @@ href="https://codeforces.com/contest/1614/submission/137577347">submission</a></
         <tag>number theory</tag>
         <tag>DP: state design</tag>
         <tag>segment tree</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Codeforces Round #747 (Div. 2)</title>
-    <url>/2021/10/09/Codeforces-Round-747-Div-2/</url>
-    <content><![CDATA[<h1 id="codeforces-round-747-div.-2"><a
-href="https://codeforces.com/contest/1594">Codeforces Round #747 (Div.
-2)</a></h1>
-<h3 id="f---ideal-farm"><a
-href="https://codeforces.com/contest/1594/problem/F">F - Ideal
-Farm</a></h3>
-<p>let <span class="math inline">\(s_i=\sum_{k\le i}a_i\)</span></p>
-<p>The Farm is ideal only if there exist <span
-class="math inline">\(s_i=s_j+k\)</span>.</p>
-<p>let <span class="math inline">\(t_i=s_i+k\)</span>, <span
-class="math inline">\(t_0=k\)</span></p>
-<p>The Farm is ideal only if for all possible <span
-class="math inline">\(\{a_n\}\)</span>, a <span
-class="math inline">\(s_i\)</span> coincides with <span
-class="math inline">\(t_j\)</span>.</p>
-<p>Since <span class="math inline">\(s_i,t_i \in[1, s + k]\)</span>, we
-can calculate the maximum possible <span
-class="math inline">\(n\)</span>.</p>
-]]></content>
-      <categories>
-        <category>CodeForces</category>
-      </categories>
-      <tags>
-        <tag>Pigeonhole principle</tag>
       </tags>
   </entry>
   <entry>
@@ -1402,11 +1402,17 @@ class="math inline">\(X\)</span> are unmatched. (from Wikipedia).</p>
 <h2 id="example">Example</h2>
 <p><a
 href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOISC
-2022 day3, sugar, subtask 2</a></p>
+2022 day3, sugar</a></p>
 ]]></content>
       <tags>
         <tag>Hall&#39;s Theorem</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>JOI 2022 Final</title>
@@ -1460,12 +1466,6 @@ class="math inline">\(1\)</span>个.</p>
         <tag>Inclusion-Exclusion Principle</tag>
         <tag>Binary Search</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
-]]></content>
   </entry>
   <entry>
     <title>JOISC 2022</title>
@@ -1545,9 +1545,9 @@ time though.</p>
 <ol type="1">
 <li><span class="math inline">\(D_i \le 40\)</span>, wow!<br />
 </li>
-<li>sadly L is not a prime, if we implement the inclusion-exclution
-trick, it would be <span class="math inline">\(O(N \log D \log
-maxA)\)</span>.<br />
+<li>sadly <span class="math inline">\(L\)</span> is not a prime, if we
+implement an inclusion-exclution principle + BIT, it would be <span
+class="math inline">\(O(N \log D \log maxA)\)</span>.<br />
 </li>
 <li>why not design a tiling strategy that eliminates 2 logs in one
 go?<br />
