@@ -168,7 +168,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">60</span>
+        <span class="site-state-item-count">61</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -231,7 +231,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-04-05 10:27:40 / Modified: 03:42:42" itemprop="dateCreated datePublished" datetime="2022-04-05T10:27:40Z">2022-04-05</time>
+      <time title="Created: 2022-04-05 10:27:40 / Modified: 12:41:48" itemprop="dateCreated datePublished" datetime="2022-04-05T10:27:40Z">2022-04-05</time>
     </span>
 
   
@@ -329,10 +329,46 @@ go?<br />
 <li><span class="math inline">\(O(ND)\)</span>.</li>
 </ol>
 <h3 id="sugar">sugar</h3>
-<h2 id="day4">day4</h2>
-<h3 id="dango3">dango3</h3>
-<h3 id="fish2">fish2</h3>
-<h3 id="reconstruction">reconstruction</h3>
+<ol type="1">
+<li>render this as a bipartite matching problem. review Hall's marriage
+theorem (quantitative version).<br />
+</li>
+<li><span class="math inline">\(Ans = \sum ants + \min_{S \subseteq
+Ants}|\mathrm{Adj}(S)| - |S|\)</span>, where <span
+class="math inline">\(\mathrm{Adj}(S)\)</span> is all sugar reachable
+from ants in <span class="math inline">\(S\)</span>.<br />
+</li>
+<li>subtask2: the matching has strong locality (choose of ant only
+affect adjacent sugars). This can be easily maintained by a segment
+tree.<br />
+</li>
+<li>observation: assume sugar in <span
+class="math inline">\(|\mathrm{Adj}(S)|\)</span>, that can be reached by
+ants in interval <span class="math inline">\([l, r]\)</span>, if <span
+class="math inline">\(\exist s, t \in S\cap [l, r]\)</span>, if we just
+include all ants in interval <span class="math inline">\([s,
+t]\)</span>, the answer will only be lesser. which implies the optimal
+choose of <span class="math inline">\(S\)</span> has all its element
+form a substring in all it's adjacent sugars.<br />
+</li>
+<li>with this observation, we can apply the inclusion-exclution
+principle: for each sugar, let any <span class="math inline">\(x\in [l,
+r], x \in S\)</span> have <span class="math inline">\(+1\)</span>
+contribution, and any <span class="math inline">\(x \in [l, r-1], x, x+1
+\in S\)</span> have <span class="math inline">\(-1\)</span>
+contribution. And once again, we have strong locality guaranteed.<br />
+</li>
+<li>How to handle the insertion of sugar?
+<ol type="1">
+<li>for a whole node in segment tree, the answer will always increase by
+number of sugar inserted.</li>
+<li>to handle the gap between nodes, we can record for each node, sugars
+that affect the gap between it's two childrens. ## day4<br />
+### dango3<br />
+### fish2<br />
+### reconstruction</li>
+</ol></li>
+</ol>
 
       
     </div>
@@ -384,7 +420,7 @@ go?<br />
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-04-05 10:17:22 / Modified: 04:06:51" itemprop="dateCreated datePublished" datetime="2022-04-05T10:17:22Z">2022-04-05</time>
+      <time title="Created: 2022-04-05 10:17:22 / Modified: 10:51:40" itemprop="dateCreated datePublished" datetime="2022-04-05T10:17:22Z">2022-04-05</time>
     </span>
 
   

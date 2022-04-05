@@ -364,6 +364,12 @@ class="math inline">\(O(n\log n)\)</span>的状态数.</p>
       </tags>
   </entry>
   <entry>
+    <title>AGC040</title>
+    <url>/2022/02/20/AGC040/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>ARC134</title>
     <url>/2022/01/31/ARC134/</url>
     <content><![CDATA[<h1 id="atcoder-regular-contest-134"><a
@@ -396,12 +402,6 @@ class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增�
       <tags>
         <tag>searching</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>AGC040</title>
-    <url>/2022/02/20/AGC040/</url>
-    <content><![CDATA[
-]]></content>
   </entry>
   <entry>
     <title>About</title>
@@ -1555,14 +1555,51 @@ go?<br />
 <li><span class="math inline">\(O(ND)\)</span>.</li>
 </ol>
 <h3 id="sugar">sugar</h3>
-<h2 id="day4">day4</h2>
-<h3 id="dango3">dango3</h3>
-<h3 id="fish2">fish2</h3>
-<h3 id="reconstruction">reconstruction</h3>
+<ol type="1">
+<li>render this as a bipartite matching problem. review Hall's marriage
+theorem (quantitative version).<br />
+</li>
+<li><span class="math inline">\(Ans = \sum ants + \min_{S \subseteq
+Ants}|\mathrm{Adj}(S)| - |S|\)</span>, where <span
+class="math inline">\(\mathrm{Adj}(S)\)</span> is all sugar reachable
+from ants in <span class="math inline">\(S\)</span>.<br />
+</li>
+<li>subtask2: the matching has strong locality (choose of ant only
+affect adjacent sugars). This can be easily maintained by a segment
+tree.<br />
+</li>
+<li>observation: assume sugar in <span
+class="math inline">\(|\mathrm{Adj}(S)|\)</span>, that can be reached by
+ants in interval <span class="math inline">\([l, r]\)</span>, if <span
+class="math inline">\(\exist s, t \in S\cap [l, r]\)</span>, if we just
+include all ants in interval <span class="math inline">\([s,
+t]\)</span>, the answer will only be lesser. which implies the optimal
+choose of <span class="math inline">\(S\)</span> has all its element
+form a substring in all it's adjacent sugars.<br />
+</li>
+<li>with this observation, we can apply the inclusion-exclution
+principle: for each sugar, let any <span class="math inline">\(x\in [l,
+r], x \in S\)</span> have <span class="math inline">\(+1\)</span>
+contribution, and any <span class="math inline">\(x \in [l, r-1], x, x+1
+\in S\)</span> have <span class="math inline">\(-1\)</span>
+contribution. And once again, we have strong locality guaranteed.<br />
+</li>
+<li>How to handle the insertion of sugar?
+<ol type="1">
+<li>for a whole node in segment tree, the answer will always increase by
+number of sugar inserted.</li>
+<li>to handle the gap between nodes, we can record for each node, sugars
+that affect the gap between it's two childrens. ## day4<br />
+### dango3<br />
+### fish2<br />
+### reconstruction</li>
+</ol></li>
+</ol>
 ]]></content>
       <tags>
         <tag>observation</tag>
         <tag>Hall&#39;s Theorem</tag>
+        <tag>Hall&#39;s marriage theorem (quantitative version)</tag>
       </tags>
   </entry>
   <entry>
@@ -2046,6 +2083,24 @@ n \right]\)</span></h1>
       </tags>
   </entry>
   <entry>
+    <title>misc</title>
+    <url>/2022/03/23/misc/</url>
+    <content><![CDATA[<p><span class="math display">\[
+v_p(n!)=\sum_{k\ge1}\lfloor\frac{n}{p^k}\rfloor=\frac{n-\mathrm{sum\_of\_digits}(n)}{p-1}
+\]</span></p>
+<p>thus</p>
+<p><span class="math display">\[
+v_p(\binom {n+m}m) = \#\text{lifting in p-ary addition n + m.}
+\]</span> 3</p>
+<p>上下都有限制的折线法: 可以反复映射,做到<span
+class="math inline">\(O(n+m/(a+b))\)</span>的复杂度.2</p>
+<p>切比雪夫距离与曼哈顿距离转化</p>
+<p>区间DP套数位DP, WTF? 数位DP, 但上下界不独立:
+记录0/1/2表示顶上界/下界/自由选择</p>
+<p>多想想极限情况,最后再想推广</p>
+]]></content>
+  </entry>
+  <entry>
     <title>fun facts about sequences</title>
     <url>/2022/02/15/fun-facts-about-sequences/</url>
     <content><![CDATA[<ol type="1">
@@ -2070,24 +2125,6 @@ class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
       <tags>
         <tag>observation</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>misc</title>
-    <url>/2022/03/23/misc/</url>
-    <content><![CDATA[<p><span class="math display">\[
-v_p(n!)=\sum_{k\ge1}\lfloor\frac{n}{p^k}\rfloor=\frac{n-\mathrm{sum\_of\_digits}(n)}{p-1}
-\]</span></p>
-<p>thus</p>
-<p><span class="math display">\[
-v_p(\binom {n+m}m) = \#\text{lifting in p-ary addition n + m.}
-\]</span> 3</p>
-<p>上下都有限制的折线法: 可以反复映射,做到<span
-class="math inline">\(O(n+m/(a+b))\)</span>的复杂度.2</p>
-<p>切比雪夫距离与曼哈顿距离转化</p>
-<p>区间DP套数位DP, WTF? 数位DP, 但上下界不独立:
-记录0/1/2表示顶上界/下界/自由选择</p>
-<p>多想想极限情况,最后再想推广</p>
-]]></content>
   </entry>
   <entry>
     <title>passwd impl test</title>
