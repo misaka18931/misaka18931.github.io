@@ -21,29 +21,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"misaka18931.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="「LibreOJ NOI Round #2」不等关系 题目描述： 给定一个字符串，仅包含 &lt; 和 &gt; 两种字符。你需要计算「使得\(p_i&lt;p_{i+1}\)当且仅当 \(s_i\)为 &lt; 的排列 \(p_1,p_2,\dots p_n\) 」的数量。 考虑容斥：&lt;不满足即为&gt;满足，故原问题转化为求满足多个连续段递增的排列数目。 利用FFT优化DP连续段即可。">
+<meta name="description" content="day1 jail  It can be proved that if the answer is Yes, we always have a construction in which each prisoner take consecutive moves. Tips: if 2 moves by one prisoner is not consecutive, let it be \(u \">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LibreOJ #575">
-<meta property="og:url" content="https://misaka18931.github.io/2021/12/30/LibreOJ-575/index.html">
+<meta property="og:title" content="JOISC 2022">
+<meta property="og:url" content="https://misaka18931.github.io/2022/04/05/JOISC-2022/index.html">
 <meta property="og:site_name" content="misaka18931&#39;s blog">
-<meta property="og:description" content="「LibreOJ NOI Round #2」不等关系 题目描述： 给定一个字符串，仅包含 &lt; 和 &gt; 两种字符。你需要计算「使得\(p_i&lt;p_{i+1}\)当且仅当 \(s_i\)为 &lt; 的排列 \(p_1,p_2,\dots p_n\) 」的数量。 考虑容斥：&lt;不满足即为&gt;满足，故原问题转化为求满足多个连续段递增的排列数目。 利用FFT优化DP连续段即可。">
+<meta property="og:description" content="day1 jail  It can be proved that if the answer is Yes, we always have a construction in which each prisoner take consecutive moves. Tips: if 2 moves by one prisoner is not consecutive, let it be \(u \">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-12-29T17:17:54.000Z">
-<meta property="article:modified_time" content="2022-02-24T12:56:40.869Z">
+<meta property="article:published_time" content="2022-04-05T10:27:40.000Z">
+<meta property="article:modified_time" content="2022-04-05T03:26:19.521Z">
 <meta property="article:author" content="misaka18931">
-<meta property="article:tag" content="FFT">
-<meta property="article:tag" content="Inclusion-Exclusion Principle">
+<meta property="article:tag" content="observation">
+<meta property="article:tag" content="Hall&#39;s Theorem">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://misaka18931.github.io/2021/12/30/LibreOJ-575/">
+<link rel="canonical" href="https://misaka18931.github.io/2022/04/05/JOISC-2022/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2021/12/30/LibreOJ-575/","path":"2021/12/30/LibreOJ-575/","title":"LibreOJ #575"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/04/05/JOISC-2022/","path":"2022/04/05/JOISC-2022/","title":"JOISC 2022"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>LibreOJ #575 | misaka18931's blog</title>
+<title>JOISC 2022 | misaka18931's blog</title>
   
 
 
@@ -149,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#libreoj-noi-round-2%E4%B8%8D%E7%AD%89%E5%85%B3%E7%B3%BB"><span class="nav-number">1.</span> <span class="nav-text">「LibreOJ NOI Round #2」不等关系</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#day1"><span class="nav-number">1.</span> <span class="nav-text">day1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jail"><span class="nav-number">1.1.</span> <span class="nav-text">jail</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#day2"><span class="nav-number">2.</span> <span class="nav-text">day2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#copypaste3"><span class="nav-number">2.1.</span> <span class="nav-text">copypaste3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#day3"><span class="nav-number">3.</span> <span class="nav-text">day3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sprinkler"><span class="nav-number">3.1.</span> <span class="nav-text">sprinkler</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sugar"><span class="nav-number">3.2.</span> <span class="nav-text">sugar</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#day4"><span class="nav-number">4.</span> <span class="nav-text">day4</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dango3"><span class="nav-number">4.1.</span> <span class="nav-text">dango3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fish2"><span class="nav-number">4.2.</span> <span class="nav-text">fish2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reconstruction"><span class="nav-number">4.3.</span> <span class="nav-text">reconstruction</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -212,7 +212,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/30/LibreOJ-575/">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/04/05/JOISC-2022/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -225,7 +225,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          LibreOJ #575
+          JOISC 2022
         </h1>
 
         <div class="post-meta-container">
@@ -235,16 +235,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-12-29 17:17:54" itemprop="dateCreated datePublished" datetime="2021-12-29T17:17:54Z">2021-12-29</time>
+      <time title="Created: 2022-04-05 10:27:40 / Modified: 03:26:19" itemprop="dateCreated datePublished" datetime="2022-04-05T10:27:40Z">2022-04-05</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
 
   
 </div>
@@ -256,23 +250,92 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="libreoj-noi-round-2不等关系"><a
-target="_blank" rel="noopener" href="https://loj.ac/p/575">「LibreOJ NOI Round #2」不等关系</a></h1>
-<p>题目描述：</p>
-<p>给定一个字符串，仅包含 <code>&lt;</code> 和 <code>&gt;</code>
-两种字符。你需要计算「使得<span
-class="math inline">\(p_i&lt;p_{i+1}\)</span><strong>当且仅当</strong>
-<span class="math inline">\(s_i\)</span>为 <code>&lt;</code> 的排列
-<span class="math inline">\(p_1,p_2,\dots p_n\)</span> 」的数量。</p>
-<p>考虑容斥：<code>&lt;</code>不满足即为<code>&gt;</code>满足，故原问题转化为求满足多个连续段递增的排列数目。</p>
-<p>利用<code>FFT</code>优化<code>DP</code>连续段即可。</p>
-<p><span class="math display">\[
-\begin{aligned}
-f_0=&amp;1 \\
-f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
-{n\choose k} f_k
-\end{aligned}
-\]</span></p>
+        <h2 id="day1">day1</h2>
+<h3 id="jail">jail</h3>
+<ol type="1">
+<li>It can be proved that if the answer is Yes, we always have a
+construction in which each prisoner take consecutive moves.<br />
+Tips: if 2 moves by one prisoner is not consecutive, let it be <span
+class="math inline">\(u \rightarrow w\)</span> and <span
+class="math inline">\(w \rightarrow v\)</span>. No moves via <span
+class="math inline">\(w\)</span> can be made between the 2 moves.<br />
+By moving all moves via <span class="math inline">\(v\)</span> in the
+interval before <span class="math inline">\(u \rightarrow w\)</span> and
+all moves via <span class="math inline">\(u\)</span> after <span
+class="math inline">\(w \rightarrow v\)</span>, the construction should
+remain valid.<br />
+</li>
+<li>The problem now reduced to report if a topo order of prisoners
+exiets.<br />
+</li>
+<li>Reduce the edges to <span class="math inline">\(O(n\log n)\)</span>
+by binary lifting.<br />
+### kyoto<br />
+</li>
+<li>in a 2x2 grid, if <span class="math inline">\(A_2-A_1\lt B_2 -
+B_1\)</span>, we will never turn right at <span
+class="math inline">\((1,2)\)</span>.<br />
+</li>
+<li>get the difference array of <span class="math inline">\(A\)</span>
+and <span class="math inline">\(B\)</span>.<br />
+</li>
+<li>observation: assume <span class="math inline">\(A_j -
+A_{j-1}\)</span> is the maximum of all differences, we will never turn
+left at <span class="math inline">\((j,*)\)</span>, we simply delete
+road <span class="math inline">\(A_j\)</span>.<br />
+</li>
+<li>with several road deleted we write the difference as <span
+class="math inline">\(\frac{A_i -
+A_{\mathrm{prev}(i)}}{i-\mathrm{prev}(i)}\)</span> and the observation
+still works. ### misspelling<br />
+</li>
+<li><span class="math display">\[
+T_A = T_B \iff S_A=S_{A+1} \dots = S_B\ (A\lt B)\\
+\text{let}\ x\ \text{be the first index between }[A, B] \text{ where }
+S_x \neq S_{x+1}.\\
+T_A \lt T_B \iff \begin{cases}
+S_x \lt S_{x+1} &amp; A \gt B\\
+S_x \gt S_{x+1} &amp; A \lt B
+\end{cases}
+\]</span></li>
+<li>let <span class="math inline">\(dp[n][c] = \#[S_{n-1} \neq S_n \land
+S_n = c]\)</span><br />
+</li>
+<li>optimize it.</li>
+</ol>
+<h2 id="day2">day2</h2>
+<h3 id="copypaste3">copypaste3</h3>
+<ol type="1">
+<li>write an interval DP.<br />
+</li>
+<li>system test passed...<br />
+</li>
+<li>actually, count of all possible Operation B &amp; C combo is <span
+class="math inline">\(O(n^2\ln n)\)</span>.<br />
+### team<br />
+Elementary 3D partial order practice.<br />
+Can be implemented in <span class="math inline">\(O(n\log n)\)</span>
+time though.</li>
+</ol>
+<h2 id="day3">day3</h2>
+<h3 id="sprinkler">sprinkler</h3>
+<ol type="1">
+<li><span class="math inline">\(D_i \le 40\)</span>, wow!<br />
+</li>
+<li>sadly L is not a prime, if we implement the inclusion-exclution
+trick, it would be <span class="math inline">\(O(N \log D \log
+maxA)\)</span>.<br />
+</li>
+<li>why not design a tiling strategy that eliminates 2 logs in one
+go?<br />
+</li>
+<li><span class="math inline">\(O(ND)\)</span>.</li>
+</ol>
+<h3 id="sugar">sugar</h3>
+<h2 id="day4">day4</h2>
+<h3 id="dango3">dango3</h3>
+<h3 id="fish2">fish2</h3>
+<h3 id="reconstruction">reconstruction</h3>
 
     </div>
 
@@ -290,7 +353,7 @@ f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://misaka18931.github.io/2021/12/30/LibreOJ-575/" title="LibreOJ #575">https://misaka18931.github.io/2021/12/30/LibreOJ-575/</a>
+      <a href="https://misaka18931.github.io/2022/04/05/JOISC-2022/" title="JOISC 2022">https://misaka18931.github.io/2022/04/05/JOISC-2022/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-SA</a> unless stating additionally.
@@ -299,22 +362,19 @@ f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
 </div>
 
           <div class="post-tags">
-              <a href="/tags/FFT/" rel="tag"># FFT</a>
-              <a href="/tags/Inclusion-Exclusion-Principle/" rel="tag"># Inclusion-Exclusion Principle</a>
+              <a href="/tags/observation/" rel="tag"># observation</a>
+              <a href="/tags/Hall-s-Theorem/" rel="tag"># Hall's Theorem</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/12/29/AtCoder-Regular-Contest-132/" rel="prev" title="AtCoder Regular Contest 132">
-                  <i class="fa fa-chevron-left"></i> AtCoder Regular Contest 132
+                <a href="/2022/04/05/Hall-s-Theorem/" rel="prev" title="Hall's Theorem">
+                  <i class="fa fa-chevron-left"></i> Hall's Theorem
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/01/01/Hello-2022/" rel="next" title="Hello 2022">
-                  Hello 2022 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -373,7 +433,7 @@ f_n=&amp;\sum_{k&lt;n}\mathrm{islt}(s_{k})(-1)^{cnt(n)-cnt({k+1})}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"c69722d77afe057cc6ad0a7980fd19be"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"7efdbaab66c7ce98b7eb9e00d72ec706"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>

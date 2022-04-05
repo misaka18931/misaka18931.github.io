@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-count">54</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -197,6 +197,121 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/28/Codeforces-Round-768/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/01/28/Codeforces-Round-768/" class="post-title-link" itemprop="url">Codeforces Round #768</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-01-28 10:32:23" itemprop="dateCreated datePublished" datetime="2022-01-28T10:32:23Z">2022-01-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="codeforces-round-768"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1630">Codeforces Round
+#768</a></h1>
+<h2 id="a.-and-matching"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1630/problem/A">A. And
+Matching</a></h2>
+<p>样例已知<span class="math inline">\(n=4,k=3\)</span>无解.</p>
+<p>首先直接配对就可以得到<span
+class="math inline">\(k=0\)</span>的解.</p>
+<p>注意到<span class="math inline">\(k&lt;n\)</span>如果<span
+class="math inline">\(k\neq n-1\)</span>, 直接将<span
+class="math inline">\(k\)</span>和<span
+class="math inline">\(n-1\)</span>配对, <span
+class="math inline">\(0\)</span> 和<span
+class="math inline">\(n-k-1\)</span>配对即可.</p>
+<p>当<span class="math inline">\(k=n-1\)</span>时, <span
+class="math inline">\((n-1,n-2)\ (1,3)\ (2,n-4)\
+(0,n-3)\)</span>可以解决问题.</p>
+<h2 id="d.-flipping-range"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1630/problem/D">D. Flipping
+Range</a></h2>
+<p>因为<span class="math inline">\(b_i\le n/2\)</span>,
+通过叠加可以实现辗转相减. 于是考虑<span
+class="math inline">\(b=\gcd(B)\)</span>即可.</p>
+<p>当<span class="math inline">\(b\ge2\)</span>时, 操作是不满秩的,
+考虑非自由元部分, 每一个操作在消元后, 只会在前<span
+class="math inline">\([0,b-2]\)</span>个位置里留下1个1, 或者全为1.
+直接计算消除每一位上的1需要花费的最小价值.</p>
+<p>计算答案时对全取正需要的操作消元后, 枚举是否全部异或上1,
+根据非自由元的满足情况舍弃这些位置上的最小值即可.</p>
+<h2 id="e.-expected-components"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1630/problem/E">E. Expected
+Components</a></h2>
+<p>利用Burnside引理分别计算component总数, 和本质不同的排列总数.</p>
+<p>其中环上component等于相邻不同色的下标个数.</p>
+<p>于是可以对每一个颜色二元组计算贡献.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1041,90 +1156,6 @@ class="math inline">\(\Delta\)</span>想办法把结论作为条件带回去继�
 3. 此题将得到<code>Sigma</code>永远在子树内活动的结论.</p>
 <h2 id="f---many-easy-problems">F - Many Easy Problems</h2>
 <p>用虚数结论推一年, 算边的贡献一步做完...</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/25/AGC004/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/12/25/AGC004/" class="post-title-link" itemprop="url">AGC004</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-12-24 17:19:49" itemprop="dateCreated datePublished" datetime="2021-12-24T17:19:49Z">2021-12-24</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/AGC-Series/" itemprop="url" rel="index"><span itemprop="name">AGC Series</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="atcoder-grand-contest-004">AtCoder Grand Contest 004</h1>
-<h2 id="c---and-grid">C - AND Grid</h2>
-<p>构造. ## D - Teleporter 图论构造, 结论显然. ## E - Salvage Robots
-考虑移动<code>Exit</code>点和边界, 分析性质, 设计<code>DP</code>. ## F -
-Namori</p>
 
       
     </div>

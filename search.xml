@@ -88,32 +88,6 @@ f_{i-1}(x_0) + g_i(x)
       </tags>
   </entry>
   <entry>
-    <title>AtCoder Beginner Contest 221</title>
-    <url>/2021/10/07/ABC-221/</url>
-    <content><![CDATA[<h1 id="atcoder-beginner-contest-221">AtCoder Beginner Contest 221</h1>
-<h3 id="g---jumping-sequence"><a
-href="https://atcoder.jp/contests/abc221/tasks/abc221_g">G - Jumping
-sequence</a></h3>
-<p>坐标轴旋转<span
-class="math inline">\(45^\circ\)</span>，转化为2个01背包。</p>
-<h3 id="h---count-multiset"><a
-href="https://atcoder.jp/contests/abc221/tasks/abc221_h">H - Count
-Multiset</a></h3>
-<p>差分数列计数+前缀和优化</p>
-<p>差分前：</p>
-<p><span class="math display">\[
-f_{n,k}\leftarrow f_{n-ci,k-i}
-\]</span></p>
-<p>差分后：</p>
-<p><span class="math display">\[
-g_{k,s}\leftarrow_{i\lt m} g_{k-i,s-kj}
-\]</span></p>
-]]></content>
-      <categories>
-        <category>AtCoder rounds</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AGC problems</title>
     <url>/2021/10/30/AGC-problems/</url>
     <content><![CDATA[<h1 id="problem-c">Problem C</h1>
@@ -160,6 +134,32 @@ class="math inline">\((2k,2k+1)\)</span>分组。</p>
 <p>对于<span class="math inline">\(n \&amp;
 1=0\)</span>，特判前三个数，其余类似处理。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>AtCoder Beginner Contest 221</title>
+    <url>/2021/10/07/ABC-221/</url>
+    <content><![CDATA[<h1 id="atcoder-beginner-contest-221">AtCoder Beginner Contest 221</h1>
+<h3 id="g---jumping-sequence"><a
+href="https://atcoder.jp/contests/abc221/tasks/abc221_g">G - Jumping
+sequence</a></h3>
+<p>坐标轴旋转<span
+class="math inline">\(45^\circ\)</span>，转化为2个01背包。</p>
+<h3 id="h---count-multiset"><a
+href="https://atcoder.jp/contests/abc221/tasks/abc221_h">H - Count
+Multiset</a></h3>
+<p>差分数列计数+前缀和优化</p>
+<p>差分前：</p>
+<p><span class="math display">\[
+f_{n,k}\leftarrow f_{n-ci,k-i}
+\]</span></p>
+<p>差分后：</p>
+<p><span class="math display">\[
+g_{k,s}\leftarrow_{i\lt m} g_{k-i,s-kj}
+\]</span></p>
+]]></content>
+      <categories>
+        <category>AtCoder rounds</category>
+      </categories>
   </entry>
   <entry>
     <title>AGC001</title>
@@ -355,21 +355,6 @@ class="math inline">\(O(n\log n)\)</span>的状态数.</p>
       </categories>
   </entry>
   <entry>
-    <title>AGC020</title>
-    <url>/2022/03/02/AGC020/</url>
-    <content><![CDATA[<h1 id="section"></h1>
-]]></content>
-      <tags>
-        <tag>AGC Series</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>AGC040</title>
-    <url>/2022/02/20/AGC040/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>ARC134</title>
     <url>/2022/01/31/ARC134/</url>
     <content><![CDATA[<h1 id="atcoder-regular-contest-134"><a
@@ -401,6 +386,21 @@ class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增�
       </categories>
       <tags>
         <tag>searching</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AGC040</title>
+    <url>/2022/02/20/AGC040/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
+    <title>AGC020</title>
+    <url>/2022/03/02/AGC020/</url>
+    <content><![CDATA[<h1 id="section"></h1>
+]]></content>
+      <tags>
+        <tag>AGC Series</tag>
       </tags>
   </entry>
   <entry>
@@ -751,6 +751,17 @@ href="https://www.luogu.com.cn/blog/adfgas/fou-dai-shan-di-chi-qu">参考博客<
       </tags>
   </entry>
   <entry>
+    <title>Codeforces Global Round 17</title>
+    <url>/2021/12/02/Codeforces-Global-Round-17/</url>
+    <content><![CDATA[<h1 id="codeforces-global-round-17"><a
+href="https://codeforces.com/contest/1610">Codeforces Global Round
+17</a></h1>
+]]></content>
+      <categories>
+        <category>CodeForces</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CCO &#39;21</title>
     <url>/2022/01/28/CCO-21/</url>
     <content><![CDATA[<h2 id="cco-2021换换排序"><a href="https://loj.ac/p/3577">「CCO
@@ -794,17 +805,6 @@ class="math inline">\(\mathrm{chkmin}(Ans_{e.u},
 class="math inline">\(\mathrm{chkmin}\)</span>, 不要直接赋值,
 因为可能再递归删除时得到了更小的答案.</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>Codeforces Global Round 17</title>
-    <url>/2021/12/02/Codeforces-Global-Round-17/</url>
-    <content><![CDATA[<h1 id="codeforces-global-round-17"><a
-href="https://codeforces.com/contest/1610">Codeforces Global Round
-17</a></h1>
-]]></content>
-      <categories>
-        <category>CodeForces</category>
-      </categories>
   </entry>
   <entry>
     <title>Codeforces Round #738 (Div. 2)</title>
@@ -1409,6 +1409,12 @@ href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOIS
       </tags>
   </entry>
   <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>JOI 2022 Final</title>
     <url>/2022/02/16/JOI-2022-Final/</url>
     <content><![CDATA[<h1 id="joi-2022-final">JOI 2022 Final</h1>
@@ -1462,10 +1468,99 @@ class="math inline">\(1\)</span>个.</p>
       </tags>
   </entry>
   <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
+    <title>JOISC 2022</title>
+    <url>/2022/04/05/JOISC-2022/</url>
+    <content><![CDATA[<h2 id="day1">day1</h2>
+<h3 id="jail">jail</h3>
+<ol type="1">
+<li>It can be proved that if the answer is Yes, we always have a
+construction in which each prisoner take consecutive moves.<br />
+Tips: if 2 moves by one prisoner is not consecutive, let it be <span
+class="math inline">\(u \rightarrow w\)</span> and <span
+class="math inline">\(w \rightarrow v\)</span>. No moves via <span
+class="math inline">\(w\)</span> can be made between the 2 moves.<br />
+By moving all moves via <span class="math inline">\(v\)</span> in the
+interval before <span class="math inline">\(u \rightarrow w\)</span> and
+all moves via <span class="math inline">\(u\)</span> after <span
+class="math inline">\(w \rightarrow v\)</span>, the construction should
+remain valid.<br />
+</li>
+<li>The problem now reduced to report if a topo order of prisoners
+exiets.<br />
+</li>
+<li>Reduce the edges to <span class="math inline">\(O(n\log n)\)</span>
+by binary lifting.<br />
+### kyoto<br />
+</li>
+<li>in a 2x2 grid, if <span class="math inline">\(A_2-A_1\lt B_2 -
+B_1\)</span>, we will never turn right at <span
+class="math inline">\((1,2)\)</span>.<br />
+</li>
+<li>get the difference array of <span class="math inline">\(A\)</span>
+and <span class="math inline">\(B\)</span>.<br />
+</li>
+<li>observation: assume <span class="math inline">\(A_j -
+A_{j-1}\)</span> is the maximum of all differences, we will never turn
+left at <span class="math inline">\((j,*)\)</span>, we simply delete
+road <span class="math inline">\(A_j\)</span>.<br />
+</li>
+<li>with several road deleted we write the difference as <span
+class="math inline">\(\frac{A_i -
+A_{\mathrm{prev}(i)}}{i-\mathrm{prev}(i)}\)</span> and the observation
+still works. ### misspelling<br />
+</li>
+<li><span class="math display">\[
+T_A = T_B \iff S_A=S_{A+1} \dots = S_B\ (A\lt B)\\
+\text{let}\ x\ \text{be the first index between }[A, B] \text{ where }
+S_x \neq S_{x+1}.\\
+T_A \lt T_B \iff \begin{cases}
+S_x \lt S_{x+1} &amp; A \gt B\\
+S_x \gt S_{x+1} &amp; A \lt B
+\end{cases}
+\]</span></li>
+<li>let <span class="math inline">\(dp[n][c] = \#[S_{n-1} \neq S_n \land
+S_n = c]\)</span><br />
+</li>
+<li>optimize it.</li>
+</ol>
+<h2 id="day2">day2</h2>
+<h3 id="copypaste3">copypaste3</h3>
+<ol type="1">
+<li>write an interval DP.<br />
+</li>
+<li>system test passed...<br />
+</li>
+<li>actually, count of all possible Operation B &amp; C combo is <span
+class="math inline">\(O(n^2\ln n)\)</span>.<br />
+### team<br />
+Elementary 3D partial order practice.<br />
+Can be implemented in <span class="math inline">\(O(n\log n)\)</span>
+time though.</li>
+</ol>
+<h2 id="day3">day3</h2>
+<h3 id="sprinkler">sprinkler</h3>
+<ol type="1">
+<li><span class="math inline">\(D_i \le 40\)</span>, wow!<br />
+</li>
+<li>sadly L is not a prime, if we implement the inclusion-exclution
+trick, it would be <span class="math inline">\(O(N \log D \log
+maxA)\)</span>.<br />
+</li>
+<li>why not design a tiling strategy that eliminates 2 logs in one
+go?<br />
+</li>
+<li><span class="math inline">\(O(ND)\)</span>.</li>
+</ol>
+<h3 id="sugar">sugar</h3>
+<h2 id="day4">day4</h2>
+<h3 id="dango3">dango3</h3>
+<h3 id="fish2">fish2</h3>
+<h3 id="reconstruction">reconstruction</h3>
 ]]></content>
+      <tags>
+        <tag>observation</tag>
+        <tag>Hall&#39;s Theorem</tag>
+      </tags>
   </entry>
   <entry>
     <title>LOJ targeted training: DP &amp; Probability &amp; Expectation</title>

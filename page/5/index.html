@@ -157,7 +157,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">53</span>
+          <span class="site-state-item-count">54</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -197,6 +197,134 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/23/Presets-for-NOI-series-Algorithm-Contests/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/23/Presets-for-NOI-series-Algorithm-Contests/" class="post-title-link" itemprop="url">Presets for NOI series Algorithm Contests</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-23 09:38:50" itemprop="dateCreated datePublished" datetime="2021-10-23T09:38:50Z">2021-10-23</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="presets-for-noi-series-algorithm-contests">Presets for NOI
+series Algorithm Contests</h1>
+<h2 id="system-settings">System Settings</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gsettings <span class="built_in">set</span> org.gnome.desktop.interface cursor-blink <span class="literal">false</span></span><br><span class="line">gsettings <span class="built_in">set</span> org.gnome.desktop.wm.preferences focus-mode mouse</span><br><span class="line">xset r rate 300 50  <span class="comment"># X11 repeat rate</span></span><br></pre></td></tr></table></figure>
+<h2 id="editor-configuration">Editor Configuration</h2>
+<h3 id="gnome-terminal">GNOME Terminal</h3>
+<p>Change color schemes to <code>Tango dark</code>.</p>
+<h3 id="vim">Vim</h3>
+<p>in <code>~/.vimrc</code></p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span></span><br><span class="line"><span class="keyword">set</span> expandtab softtabstop=<span class="number">2</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span></span><br><span class="line"><span class="keyword">set</span> ai <span class="built_in">cindent</span> copyindent</span><br><span class="line"><span class="keyword">set</span> mouse=<span class="keyword">a</span></span><br><span class="line"><span class="comment">&quot;set number relativenumber</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.cpp :!g++ -DMISAKA %:<span class="keyword">p</span> -<span class="keyword">o</span> %:<span class="keyword">p</span>:r</span><br><span class="line"><span class="keyword">autocmd</span> BufNewFile *.cpp <span class="number">0</span>r ~/cpp.cpp</span><br><span class="line"><span class="keyword">nmap</span> S :s//g<span class="symbol">&lt;left&gt;</span><span class="symbol">&lt;left&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="string">&#x27; &#x27;</span><span class="string">&#x27;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &quot; &quot;&quot;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123; &#123;&#125;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap ( ()&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap [ []&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123; &#123;&#125;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123;&lt;CR&gt; &#123;&lt;CR&gt;&#125;&lt;ESC&gt;O</span></span><br><span class="line"><span class="string">inoremap &quot;&quot; &quot;</span></span><br><span class="line"><span class="string">inoremap &#x27;</span><span class="string">&#x27; &#x27;</span></span><br><span class="line"><span class="keyword">inoremap</span> [[ [</span><br><span class="line"><span class="keyword">inoremap</span> (( (</span><br><span class="line"><span class="keyword">inoremap</span> &#123;&#123; &#123;</span><br></pre></td></tr></table></figure>
+<h2 id="codeblocks-ide-configuration-debugging">Code::Blocks IDE
+Configuration (Debugging)</h2>
+<p><strong>Reminder:</strong> debugging with Code::Blocks requires
+pasting original code to <code>main.cpp</code> then paste the modified
+version back, be careful!</p>
+<ol type="1">
+<li><p>Create a new project</p></li>
+<li><p>choose Console application</p></li>
+<li><p>specify folder name (must done)</p></li>
+<li><p>copy code to <code>main.cpp</code> to start debugging;</p></li>
+</ol>
+<h2 id="code-snippetstemplates">Code Snippets/Templates</h2>
+<h3 id="c-main-solution-file">C++ main solution file</h3>
+<p>in <code>~/cpp.cpp</code></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> i64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> u64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> u32;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mkp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> eb emplace_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FOR(i, j, k) for (int i = (j); i &lt; (k); ++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ROF(i, j, k) for (int i = ((k) - 1); i &gt;= j; --i)</span></span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">chkmin</span><span class="params">(T &amp;a, <span class="keyword">const</span> T b)</span> </span>&#123;</span><br><span class="line">  a = <span class="built_in">min</span>(a, b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">chkmax</span><span class="params">(T &amp;a, <span class="keyword">const</span> T b)</span> </span>&#123;</span><br><span class="line">  a = <span class="built_in">max</span>(a, b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = ;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MISAKA</span></span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(<span class="string">&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line">  ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">  cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  <span class="built_in">solve</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* Checklist:</span></span><br><span class="line"><span class="comment"> * - data type</span></span><br><span class="line"><span class="comment"> * - overflow</span></span><br><span class="line"><span class="comment"> * - typo/logic</span></span><br><span class="line"><span class="comment"> * - special cases</span></span><br><span class="line"><span class="comment"> * - cleanup (multi-test)</span></span><br><span class="line"><span class="comment"> * - bounds</span></span><br><span class="line"><span class="comment"> * - memory usage</span></span><br><span class="line"><span class="comment"> * - file IO</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+<h3 id="c-generator">C++ generator</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> i64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> u64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> u32;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mkp make_pair</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> eb emplace_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FOR(i, j, k) for (int i = (j); i &lt; (k); ++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ROF(i, j, k) for (int i = ((k) - 1); i &gt;= j; --i)</span></span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">chkmin</span><span class="params">(T &amp;a, <span class="keyword">const</span> T b)</span> </span>&#123;</span><br><span class="line">  a = <span class="built_in">min</span>(a, b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">chkmax</span><span class="params">(T &amp;a, <span class="keyword">const</span> T b)</span> </span>&#123;</span><br><span class="line">  a = <span class="built_in">max</span>(a, b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> uniform_int_distribution&lt;<span class="keyword">int</span>&gt; ui;</span><br><span class="line">mt19937 gen;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = ;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  gen = <span class="built_in">mt19937</span>(chrono::<span class="built_in">steady_clock</span>().<span class="built_in">now</span>().<span class="built_in">time_since_epoch</span>().<span class="built_in">count</span>());</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="checker-script-random-test-cases-batching">checker script
+(random test cases batching)</h3>
+<p><strong>Reminder:</strong> compile solution code without local
+flag.</p>
+<h4 id="one-liner-validator-script">one-liner validator script</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ((i=0; i &lt; 10000; ++i)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;#<span class="variable">$i</span>&quot;</span>; ./gen &gt; ex.in 2&gt; ex.ans; ./ex;</span><br><span class="line">    diff ex.out ex.ans || <span class="built_in">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="one-liner-stress-test-script">one-liner stress test script</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ((i=0;i&lt;10000;++i)) &#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;#<span class="variable">$i</span>&quot;</span>; ./gen &gt; ex.in; time ./ex</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="other-linux-utilities">other linux utilities</h3>
+<h4 id="generate-strings-from-devurandom.">generate strings from
+<code>/dev/urandom</code>.</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tr -dc <span class="string">&quot;[a-z]&quot;</span> &lt; /dev/urandom | head -c 1000</span><br></pre></td></tr></table></figure>
+<h1 id="reminders">Reminders</h1>
+<h2 id="checklist">Checklist</h2>
+<ul>
+<li>data type</li>
+<li>overflow</li>
+<li>typo/logic</li>
+<li>special cases</li>
+<li>cleanup (multi-test)</li>
+<li>bounds</li>
+<li>memory usage</li>
+<li>file IO</li>
+</ul>
+<h2 id="coding-vim">Coding (Vim)</h2>
+<ul>
+<li><p>Since it's auto compile, never blindly <code>:wq</code> out of
+vim. Instead, see the compiler logs.</p></li>
+<li><p>backup source file before massive modifications.</p></li>
+<li><p>use vim with a calm mind to prevent disasters.</p></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1161,142 +1289,6 @@ class="math inline">\(\rightarrow\)</span> 树上差分BIT</strong></p>
 - 洛谷</a> directed path, double constant. Difficulty: lxl</p>
 <p><a target="_blank" rel="noopener" href="https://darkbzoj.tk/problem/4771">七彩树 - 题目 -
 黑暗爆炸OJ</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/08/22/ABC-215/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/22/ABC-215/" class="post-title-link" itemprop="url">ABC #215</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-21 22:30:39" itemprop="dateCreated datePublished" datetime="2021-08-21T22:30:39Z">2021-08-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/AtCoder-rounds/" itemprop="url" rel="index"><span itemprop="name">AtCoder rounds</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="atcoder-beginner-contest-215"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc215">AtCoder Beginner Contest
-215</a></h2>
-<h4 id="f---dist-max-2"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc215/tasks/abc215_f">F - Dist Max
-2</a></h4>
-<p>Approach: binary search</p>
-<p>Binary Search is always an option! Unless you have to do things the
-hardest way.</p>
-<h4 id="g---colorful-candies-2"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc215/tasks/abc215_g">G - Colorful
-Candies 2</a></h4>
-<p>Split the expectation into <strong>contribution over each
-color</strong>, then we have:</p>
-<p><span class="math display">\[
-\begin{aligned}
-E(X_k) = \sum_{c}1 - \binom{n- cnt_c}{k} \left.  \middle / \binom{n}{k}
-\right.
-\end{aligned}
-\]</span></p>
-<p>Notice that there are at most <span
-class="math inline">\(O(\sqrt{n})\)</span> different <span
-class="math inline">\(cnt_c\)</span>. So the problem is solved in <span
-class="math inline">\(O(n\sqrt n)\)</span> time.</p>
-<h4 id="h---cabbage-master"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc215/tasks/abc215_h">H - Cabbage
-Master</a></h4>
-<p><a
-target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hall&#39;s_marriage_theorem">Hall's
-marriage theorem</a></p>
-<p>let <span class="math inline">\(O\)</span> be the set of all "1
-cabbage order"<span class="math inline">\((ord, V)\)</span> where <span
-class="math inline">\(V\)</span> is the set of all acceptable
-brands.</p>
-<p>By Hall’s marriage theorem, all the orders in set <span
-class="math inline">\(O\)</span> can be satisfied if and only if</p>
-<blockquote>
-<p>for all <span class="math inline">\(T \subseteq O\)</span> , <span
-class="math inline">\(\sum_{s\in \cup V}a_s \ge |T|\)</span> holds.</p>
-</blockquote>
-<p>change the summation order and iterate over set of brands, we
-have</p>
-<p><span class="math display">\[
-f(S) \ge g(S)
-\]</span></p>
-<p>for all <span class="math inline">\(S \subseteq V\)</span> .</p>
-<p>Where <span class="math inline">\(f(S)\)</span> is number of
-cabbages, <span class="math inline">\(g(S)\)</span> is number of
-orders.</p>
-<p><span class="math inline">\(\min {(f(S) - g(S))}\)</span> is the
-number of cabbages eaten.</p>
-<p>Find all valid <span class="math inline">\(S\)</span>, and calculate
-the number of ways when the snake only eats cabbages of brands in <span
-class="math inline">\(S\)</span>.</p>
-<p>This can be done using an OR convolution and an inverse AND
-convolution.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">binom_init</span>();</span><br><span class="line">  <span class="keyword">int</span> n = <span class="built_in">rd</span>(), m = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, n) a[i] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, m) b[i] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, n) <span class="built_in">FOR</span>(j, <span class="number">0</span>, m) c[i][j] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) <span class="built_in">FOR</span>(j, <span class="number">0</span>, n) f[i] += ((i &amp; (<span class="number">1</span> &lt;&lt; j)) != <span class="number">0</span>) * a[j];</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, m) &#123;</span><br><span class="line">    <span class="keyword">int</span> t = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">ROF</span>(j, <span class="number">0</span>, n) t = (t &lt;&lt; <span class="number">1</span>) | c[j][i];</span><br><span class="line">    g[t] += b[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">fwt</span>(g, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="keyword">int</span> X = <span class="number">1e9</span>;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) &#123;</span><br><span class="line">    <span class="keyword">if</span> (g[i]) <span class="built_in">chkmin</span>(X, f[i] - g[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (X &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;0 1&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) &#123;</span><br><span class="line">    <span class="keyword">if</span> (g[i] &amp;&amp; f[i] - g[i] == X) flag[i] = <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">fmt</span>(flag, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) h[i] = <span class="built_in">binom</span>(f[i], X + <span class="number">1</span>);</span><br><span class="line">  ifwt(h, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="function">mint <span class="title">ans</span><span class="params">(<span class="number">0</span>)</span></span>;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) <span class="keyword">if</span> (flag[i]) ans += h[i];</span><br><span class="line">  cout &lt;&lt; X + <span class="number">1</span> &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
