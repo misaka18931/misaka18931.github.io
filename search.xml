@@ -302,6 +302,22 @@ class="math inline">\(\Delta\)</span>想办法把结论作为条件带回去继�
       </tags>
   </entry>
   <entry>
+    <title>AGC007</title>
+    <url>/2022/01/20/AGC007/</url>
+    <content><![CDATA[<h1 id="atcoder-grand-contest-003">AtCoder Grand Contest 003</h1>
+<h2 id="c---pushing-balls">C - Pushing Balls</h2>
+<p>期望是可以迭代的.
+推式子可以发现第一步操作以后的期望距离序列依然是等差数列,于是递归.</p>
+<h2 id="d---shik-and-game">D - Shik and Game</h2>
+<p>单调队列优化DP ## E - Shik and Travel
+二分+<code>DP</code>,将严格不优的状态去掉就能做到<span
+class="math inline">\(O(n\log n)\)</span>的状态数.</p>
+]]></content>
+      <categories>
+        <category>AGC Series</category>
+      </categories>
+  </entry>
+  <entry>
     <title>AGC006</title>
     <url>/2022/01/20/AGC006/</url>
     <content><![CDATA[<h1 id="atcoder-grand-contest-006">AtCoder Grand Contest 006</h1>
@@ -339,22 +355,6 @@ class="math inline">\((d(x,z)\mod 3)\)</span>有关. 如果把图3-染色,
       </tags>
   </entry>
   <entry>
-    <title>AGC007</title>
-    <url>/2022/01/20/AGC007/</url>
-    <content><![CDATA[<h1 id="atcoder-grand-contest-003">AtCoder Grand Contest 003</h1>
-<h2 id="c---pushing-balls">C - Pushing Balls</h2>
-<p>期望是可以迭代的.
-推式子可以发现第一步操作以后的期望距离序列依然是等差数列,于是递归.</p>
-<h2 id="d---shik-and-game">D - Shik and Game</h2>
-<p>单调队列优化DP ## E - Shik and Travel
-二分+<code>DP</code>,将严格不优的状态去掉就能做到<span
-class="math inline">\(O(n\log n)\)</span>的状态数.</p>
-]]></content>
-      <categories>
-        <category>AGC Series</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AGC020</title>
     <url>/2022/03/02/AGC020/</url>
     <content><![CDATA[<h1 id="section"></h1>
@@ -362,6 +362,12 @@ class="math inline">\(O(n\log n)\)</span>的状态数.</p>
       <tags>
         <tag>AGC Series</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>AGC040</title>
+    <url>/2022/02/20/AGC040/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>ARC134</title>
@@ -402,12 +408,6 @@ class="math inline">\(\Delta\)</span>考虑到如果把环拆成若干个递增�
     <url>/2021/08/16/About/</url>
     <content><![CDATA[<p>An archive of my problem-solving/contests logs and notes, hosted
 preliminary for future references.</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>AGC040</title>
-    <url>/2022/02/20/AGC040/</url>
-    <content><![CDATA[
 ]]></content>
   </entry>
   <entry>
@@ -1409,12 +1409,6 @@ href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOIS
       </tags>
   </entry>
   <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>JOI 2022 Final</title>
     <url>/2022/02/16/JOI-2022-Final/</url>
     <content><![CDATA[<h1 id="joi-2022-final">JOI 2022 Final</h1>
@@ -1468,6 +1462,12 @@ class="math inline">\(1\)</span>个.</p>
       </tags>
   </entry>
   <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>JOISC 2022</title>
     <url>/2022/04/05/JOISC-2022/</url>
     <content><![CDATA[<h2 id="day1">day1</h2>
@@ -1508,8 +1508,10 @@ road <span class="math inline">\(A_j\)</span>.<br />
 <li>with several road deleted we write the difference as <span
 class="math inline">\(\frac{A_i -
 A_{\mathrm{prev}(i)}}{i-\mathrm{prev}(i)}\)</span> and the observation
-still works. ### misspelling<br />
-</li>
+still works.</li>
+</ol>
+<h3 id="misspelling">misspelling</h3>
+<ol type="1">
 <li>observation <span class="math display">\[
 T_A = T_B \iff S_A=S_{A+1} \dots = S_B\ (A\lt B)
 \]</span> <span class="math display">\[
