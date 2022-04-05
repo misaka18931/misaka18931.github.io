@@ -157,13 +157,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -621,6 +621,100 @@ class="math inline">\(1\)</span>个.</p>
 <p>大力前缀和即可.</p>
 <p>做到<span class="math inline">\(O(H^2W)\)</span>需要枚举一维,
 用一个桶计数另一维.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/02/15/fun-facts-about-sequences/" class="post-title-link" itemprop="url">fun facts about sequences</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-02-15 14:29:33" itemprop="dateCreated datePublished" datetime="2022-02-15T14:29:33Z">2022-02-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-04-05 02:27:19" itemprop="dateModified" datetime="2022-04-05T02:27:19Z">2022-04-05</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/misc/" itemprop="url" rel="index"><span itemprop="name">misc</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <ol type="1">
+<li><p>一个和为<span class="math inline">\(0\)</span>的随机序列<span
+class="math inline">\(\{a_n\}\)</span>, <span
+class="math inline">\(E(\max_i(\sum_{j\le  i}a_j))=O(\sqrt N)\)</span>.
+常用于<code>DP</code>, 通过随机化降低时间.</p></li>
+<li><p>任意一个序列, 其中满足<span class="math inline">\(\max(A[l,r])\gt
+\max(A[l&#39;,r&#39;]),[l,r]\subsetneq
+[l&#39;,r&#39;]\)</span>的极大子段个数是<span
+class="math inline">\(O(n)\)</span>的. 求法: 单调栈</p></li>
+<li><p>对于一个排列, 对逆序对连边, 形成的连通块一定是区间.</p></li>
+<li><p>一个在<span
+class="math inline">\([0,1]\)</span>之间随机的实数序列, 长为<span
+class="math inline">\(n\)</span>, 则第k小数的期望 <span
+class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
+</ol>
 
       
     </div>
@@ -1203,107 +1297,6 @@ Components</a></h2>
 <p>利用Burnside引理分别计算component总数, 和本质不同的排列总数.</p>
 <p>其中环上component等于相邻不同色的下标个数.</p>
 <p>于是可以对每一个颜色二元组计算贡献.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/01/22/Linear-Basis/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/01/22/Linear-Basis/" class="post-title-link" itemprop="url">Linear Basis</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-01-21 17:52:51" itemprop="dateCreated datePublished" datetime="2022-01-21T17:52:51Z">2022-01-21</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="线性基">线性基</h1>
-<h2 id="构造方法">构造方法</h2>
-<ul>
-<li>逆序枚举 $ t $ 所有为 $ 1 $ 的二进制位 $ j = L $，对于每个 $ j $
-<ul>
-<li>如果 $ a_j $，则令 $ t = t a_j $</li>
-<li>如果 $ a_j = 0 $，则
-<ul>
-<li>枚举 $ k [0, j) $，如果 $ t $ 的第 $ k $ 位为 $ 1 $，则令 $ t = t
-a_k $</li>
-<li><strong>枚举 $ k (j, L] $，如果 $ a_k $ 的第 $ j $ 位为 $ 1 $，则令
-$ a_k = a_k t $</strong></li>
-<li>令 $ a_j = t $，结束插入过程</li>
-</ul></li>
-</ul></li>
-</ul>
-<p>*注意: 加粗的步骤保证了特殊性质.</p>
-<h2 id="特殊性质">特殊性质</h2>
-<p>如上构造的线性基具有很优秀的性质:</p>
-<p>每一行要么是空行, 要么<code>a[k]==1</code>并且只有<span
-class="math inline">\(i\gt k\)</span> 并且不在线性基中的位<span
-class="math inline">\(i\)</span>才有可能为<code>1</code>.
-于是看一个数是否属于线性空间, 只需要异或上
-<strong>存在于线性基中的元素</strong>
-,看其他位置是否全<code>0</code>.</p>
-<h2 id="题目">题目</h2>
-<p><a target="_blank" rel="noopener" href="https://codeforces.com/gym/102082/problem/I">2018-2019,
-ICPC, Asia Yokohama Regional Contest 2018 Problem I - Ranks</a></p>
-<p>参考文献: <a
-target="_blank" rel="noopener" href="https://oi.men.ci/linear-basis-notes/">线性基学习笔记 | Menci's
-Blog</a></p>
 
       
     </div>

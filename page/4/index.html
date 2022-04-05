@@ -157,13 +157,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -197,6 +197,109 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/12/25/AGC003/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/25/AGC003/" class="post-title-link" itemprop="url">AGC003</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-24 17:19:46" itemprop="dateCreated datePublished" datetime="2021-12-24T17:19:46Z">2021-12-24</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AGC-Series/" itemprop="url" rel="index"><span itemprop="name">AGC Series</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-grand-contest-003">AtCoder Grand Contest 003</h1>
+<h2 id="d---anticube">D - Anticube</h2>
+<ol type="1">
+<li>直接将每个数的立方因子去掉,作为代表元素. <span
+class="math inline">\(O(A^{\frac13}/\ln A)\)</span></li>
+<li>每个集合与其互补集合之间只能选择1个.</li>
+<li>如何寻找互补集合?
+<ul>
+<li>对于<span class="math inline">\(p^3 \le
+10^{10}\)</span>的因子,暴力处理.</li>
+<li>剩下的部分只能是<span class="math inline">\(p\)</span>,<span
+class="math inline">\(p^2\)</span>或<span
+class="math inline">\(pq\)</span>形式, 查表.</li>
+</ul></li>
+</ol>
+<h2 id="e---sequential-operations-on-sequence">E - Sequential operations
+on Sequence</h2>
+<ol type="1">
+<li>首先<span class="math inline">\(\{a_n\}\)</span>可以变成单调栈.</li>
+<li>考虑倒着处理问题, 每次把后缀加回前缀,
+最后得到的数列就是每个数字的出现次数.</li>
+<li>实现显然 <span class="math inline">\(O(Q\log Q\log N)\)</span></li>
+</ol>
+<h2 id="f---fraction-of-fractal">F - Fraction of Fractal</h2>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1197,103 +1300,6 @@ vim. Instead, see the compiler logs.</p></li>
 <li><p>backup source file before massive modifications.</p></li>
 <li><p>use vim with a calm mind to prevent disasters.</p></li>
 </ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/14/AGC002/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/10/14/AGC002/" class="post-title-link" itemprop="url">AGC002</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-10-13 16:24:48" itemprop="dateCreated datePublished" datetime="2021-10-13T16:24:48Z">2021-10-13</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/AGC-Series/" itemprop="url" rel="index"><span itemprop="name">AGC Series</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="atcoder-grand-contest-002---atcoder"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002">AtCoder Grand Contest 002 -
-AtCoder</a></h1>
-<h3 id="d---stamp-rally"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_d">D - Stamp
-Rally</a></h3>
-<p>通过BFS形态的整体二分，实现数据结构中只用维护加边操作。<span
-class="math inline">\(O(n\log n *DSU)\)</span></p>
-<h3 id="e---candy-piles"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_e">E - Candy
-Piles</a></h3>
-<p>建立网格图，发现两个操作分别是删一行和删一列。</p>
-<h3 id="f---leftmost-ball"><a
-target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_f">F - Leftmost
-Ball</a></h3>
-<p>不妨规定颜色出现顺序为<span class="math inline">\(1\rightarrow
-n\)</span>省去容斥的麻烦。</p>
-<p>将问题转化为拓扑序计数进行DP。</p>
 
       
     </div>

@@ -1409,12 +1409,6 @@ href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOIS
       </tags>
   </entry>
   <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
-]]></content>
-  </entry>
-  <entry>
     <title>JOI 2022 Final</title>
     <url>/2022/02/16/JOI-2022-Final/</url>
     <content><![CDATA[<h1 id="joi-2022-final">JOI 2022 Final</h1>
@@ -1466,6 +1460,12 @@ class="math inline">\(1\)</span>个.</p>
         <tag>Inclusion-Exclusion Principle</tag>
         <tag>Binary Search</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
   <entry>
     <title>LOJ targeted training: DP &amp; Probability &amp; Expectation</title>
@@ -1945,6 +1945,32 @@ n \right]\)</span></h1>
         <tag>sec</tag>
         <tag>randomize</tag>
         <tag>divide and conquer FFT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>fun facts about sequences</title>
+    <url>/2022/02/15/fun-facts-about-sequences/</url>
+    <content><![CDATA[<ol type="1">
+<li><p>一个和为<span class="math inline">\(0\)</span>的随机序列<span
+class="math inline">\(\{a_n\}\)</span>, <span
+class="math inline">\(E(\max_i(\sum_{j\le  i}a_j))=O(\sqrt N)\)</span>.
+常用于<code>DP</code>, 通过随机化降低时间.</p></li>
+<li><p>任意一个序列, 其中满足<span class="math inline">\(\max(A[l,r])\gt
+\max(A[l&#39;,r&#39;]),[l,r]\subsetneq
+[l&#39;,r&#39;]\)</span>的极大子段个数是<span
+class="math inline">\(O(n)\)</span>的. 求法: 单调栈</p></li>
+<li><p>对于一个排列, 对逆序对连边, 形成的连通块一定是区间.</p></li>
+<li><p>一个在<span
+class="math inline">\([0,1]\)</span>之间随机的实数序列, 长为<span
+class="math inline">\(n\)</span>, 则第k小数的期望 <span
+class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
+</ol>
+]]></content>
+      <categories>
+        <category>misc</category>
+      </categories>
+      <tags>
+        <tag>observation</tag>
       </tags>
   </entry>
   <entry>

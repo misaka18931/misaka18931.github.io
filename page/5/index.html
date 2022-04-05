@@ -157,13 +157,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">52</span>
+          <span class="site-state-item-count">53</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -197,6 +197,103 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/14/AGC002/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/14/AGC002/" class="post-title-link" itemprop="url">AGC002</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-13 16:24:48" itemprop="dateCreated datePublished" datetime="2021-10-13T16:24:48Z">2021-10-13</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AGC-Series/" itemprop="url" rel="index"><span itemprop="name">AGC Series</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-grand-contest-002---atcoder"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002">AtCoder Grand Contest 002 -
+AtCoder</a></h1>
+<h3 id="d---stamp-rally"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_d">D - Stamp
+Rally</a></h3>
+<p>通过BFS形态的整体二分，实现数据结构中只用维护加边操作。<span
+class="math inline">\(O(n\log n *DSU)\)</span></p>
+<h3 id="e---candy-piles"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_e">E - Candy
+Piles</a></h3>
+<p>建立网格图，发现两个操作分别是删一行和删一列。</p>
+<h3 id="f---leftmost-ball"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc002/tasks/agc002_f">F - Leftmost
+Ball</a></h3>
+<p>不妨规定颜色出现顺序为<span class="math inline">\(1\rightarrow
+n\)</span>省去容斥的麻烦。</p>
+<p>将问题转化为拓扑序计数进行DP。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1200,110 +1297,6 @@ class="math inline">\(S\)</span>.</p>
 <p>This can be done using an OR convolution and an inverse AND
 convolution.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="built_in">binom_init</span>();</span><br><span class="line">  <span class="keyword">int</span> n = <span class="built_in">rd</span>(), m = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, n) a[i] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, m) b[i] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, n) <span class="built_in">FOR</span>(j, <span class="number">0</span>, m) c[i][j] = <span class="built_in">rd</span>();</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) <span class="built_in">FOR</span>(j, <span class="number">0</span>, n) f[i] += ((i &amp; (<span class="number">1</span> &lt;&lt; j)) != <span class="number">0</span>) * a[j];</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, m) &#123;</span><br><span class="line">    <span class="keyword">int</span> t = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">ROF</span>(j, <span class="number">0</span>, n) t = (t &lt;&lt; <span class="number">1</span>) | c[j][i];</span><br><span class="line">    g[t] += b[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">fwt</span>(g, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="keyword">int</span> X = <span class="number">1e9</span>;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) &#123;</span><br><span class="line">    <span class="keyword">if</span> (g[i]) <span class="built_in">chkmin</span>(X, f[i] - g[i]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (X &lt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;0 1&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) &#123;</span><br><span class="line">    <span class="keyword">if</span> (g[i] &amp;&amp; f[i] - g[i] == X) flag[i] = <span class="number">1</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">fmt</span>(flag, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) h[i] = <span class="built_in">binom</span>(f[i], X + <span class="number">1</span>);</span><br><span class="line">  ifwt(h, <span class="number">1</span> &lt;&lt; n);</span><br><span class="line">  <span class="function">mint <span class="title">ans</span><span class="params">(<span class="number">0</span>)</span></span>;</span><br><span class="line">  <span class="built_in">FOR</span>(i, <span class="number">0</span>, <span class="number">1</span> &lt;&lt; n) <span class="keyword">if</span> (flag[i]) ans += h[i];</span><br><span class="line">  cout &lt;&lt; X + <span class="number">1</span> &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/08/20/DP-practice/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/20/DP-practice/" class="post-title-link" itemprop="url">DP practice</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-19 20:28:17" itemprop="dateCreated datePublished" datetime="2021-08-19T20:28:17Z">2021-08-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/practice-archive/" itemprop="url" rel="index"><span itemprop="name">practice archive</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="dp-practices">DP practices</h2>
-<h3 id="probabilityexpectations-dp">Probability/Expectations DP</h3>
-<h6 id="pkuwc2018随机算法"><a
-target="_blank" rel="noopener" href="https://loj.ac/p/2540">「PKUWC2018」随机算法</a></h6>
-<p>Key Inspection: After deleting a arbitrary node and all its adjacent
-nodes from the greatest independent set, the rest is still the greatest
-independent set of the remaining parts.</p>
-<p>Approach: bitmask-dp, graph-theory</p>
-<p><a
-target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/blob/9813e62255987cc6bfca12f051f63580b6626b92/loj/p2540.cpp">misaka-cp/p2540.cpp</a></p>
-<h3 id="dp-over-digits">DP over digits</h3>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4127">[AHOI2009]同类分布 -
-洛谷</a> <a
-target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/blob/9c8a11ba66983acbc8843c33a09c2b6d1357357c/luogu/P4127.cpp">code</a></p>
-<h3 id="contribution-split">contribution split</h3>
-<p><a target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/1238/E">Problem -
-1238E - Codeforces</a> <a
-target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/blob/9c8a11ba66983acbc8843c33a09c2b6d1357357c/codeforces/1238E.cpp">code</a></p>
-<h3 id="data-structure">data structure</h3>
-<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/dp/tasks/dp_w">W - Intervals</a>
-<a
-target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/blob/9c8a11ba66983acbc8843c33a09c2b6d1357357c/atcoder/dp_w.cpp">code</a></p>
-<h3 id="counting">counting</h3>
-<p><a target="_blank" rel="noopener" href="https://atcoder.jp/contests/dp/tasks/dp_y">Y - Grid 2</a> <a
-target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/blob/9c8a11ba66983acbc8843c33a09c2b6d1357357c/atcoder/dp_y.cpp">code</a></p>
 
       
     </div>
