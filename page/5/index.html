@@ -157,18 +157,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">52</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-count">60</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -197,6 +197,310 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/09/AGC001/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/09/AGC001/" class="post-title-link" itemprop="url">AGC001</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-09 09:45:44" itemprop="dateCreated datePublished" datetime="2021-10-09T09:45:44Z">2021-10-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AGC-Series/" itemprop="url" rel="index"><span itemprop="name">AGC Series</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-grand-contest-001"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc001">AtCoder Grand Contest
+001</a></h1>
+<h3 id="problem-e"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc001/tasks/agc001_e">Problem
+E</a></h3>
+<p>由于每个<span class="math inline">\((i,
+j)\)</span>对答案的贡献是<span
+class="math inline">\(a_i+b_i+a_j+b_j\choose
+a_i\)</span>,立即考虑单调路径模型。</p>
+<p>发现贡献可以看作<span class="math inline">\((-a_i, -b_i)
+\rightarrow(a_j, b_j)\)</span>。</p>
+<p>由于值域只有<span class="math inline">\(2e4\)</span>,
+直接对所有从第三象限到第一象限的路径DP即可。</p>
+<h3 id="f---wide-swap"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/agc001/tasks/agc001_f">F - Wide
+Swap</a></h3>
+<p>通过计算pos数组，操作被转化为<span class="math inline">\(swap(pos_i,
+pos_{i+1})\)</span>仅当<span class="math inline">\(|pos_i-pos_{i+1}|\ge
+K\)</span>， 要求<span
+class="math inline">\(1,2,\ldots,n\)</span>贪心地在pos最前。</p>
+<p>显然，<span class="math inline">\(|pos_i-pos_j|\lt K\)</span>的<span
+class="math inline">\((i, j)\)</span>顺序不变。对所有这样的<span
+class="math inline">\((i,j)\)</span>从i向j连边，形成DAG。</p>
+<p>答案即是字典序最小的拓扑排序。</p>
+<p>考虑贪心地对没有出边的最大的点赋予更大的序号，这样的<span
+class="math inline">\(i\)</span>满足<span
+class="math inline">\(P_i=\underset{i-K+1\le j\le i+K-1}
+{\operatorname{argmax}} P_j\)</span>。</p>
+<p><code>priority_queue</code> + 线段树RMQ。<span
+class="math inline">\(O(n\log n)\)</span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/09/Codeforces-Round-747-Div-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/09/Codeforces-Round-747-Div-2/" class="post-title-link" itemprop="url">Codeforces Round #747 (Div. 2)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-09 09:36:03" itemprop="dateCreated datePublished" datetime="2021-10-09T09:36:03Z">2021-10-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="codeforces-round-747-div.-2"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1594">Codeforces Round #747 (Div.
+2)</a></h1>
+<h3 id="f---ideal-farm"><a
+target="_blank" rel="noopener" href="https://codeforces.com/contest/1594/problem/F">F - Ideal
+Farm</a></h3>
+<p>let <span class="math inline">\(s_i=\sum_{k\le i}a_i\)</span></p>
+<p>The Farm is ideal only if there exist <span
+class="math inline">\(s_i=s_j+k\)</span>.</p>
+<p>let <span class="math inline">\(t_i=s_i+k\)</span>, <span
+class="math inline">\(t_0=k\)</span></p>
+<p>The Farm is ideal only if for all possible <span
+class="math inline">\(\{a_n\}\)</span>, a <span
+class="math inline">\(s_i\)</span> coincides with <span
+class="math inline">\(t_j\)</span>.</p>
+<p>Since <span class="math inline">\(s_i,t_i \in[1, s + k]\)</span>, we
+can calculate the maximum possible <span
+class="math inline">\(n\)</span>.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/10/07/ABC-221/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="misaka18931">
+      <meta itemprop="description" content="notes & problem solving">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="misaka18931's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/10/07/ABC-221/" class="post-title-link" itemprop="url">AtCoder Beginner Contest 221</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-10-07 08:45:17" itemprop="dateCreated datePublished" datetime="2021-10-07T08:45:17Z">2021-10-07</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/AtCoder-rounds/" itemprop="url" rel="index"><span itemprop="name">AtCoder rounds</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="atcoder-beginner-contest-221">AtCoder Beginner Contest 221</h1>
+<h3 id="g---jumping-sequence"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_g">G - Jumping
+sequence</a></h3>
+<p>坐标轴旋转<span
+class="math inline">\(45^\circ\)</span>，转化为2个01背包。</p>
+<h3 id="h---count-multiset"><a
+target="_blank" rel="noopener" href="https://atcoder.jp/contests/abc221/tasks/abc221_h">H - Count
+Multiset</a></h3>
+<p>差分数列计数+前缀和优化</p>
+<p>差分前：</p>
+<p><span class="math display">\[
+f_{n,k}\leftarrow f_{n-ci,k-i}
+\]</span></p>
+<p>差分后：</p>
+<p><span class="math display">\[
+g_{k,s}\leftarrow_{i\lt m} g_{k-i,s-kj}
+\]</span></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1018,208 +1322,8 @@ target="_blank" rel="noopener" href="https://github.com/misaka18931/misaka-cp/bl
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/08/16/Codeforces-Round-738-Div-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/16/Codeforces-Round-738-Div-2/" class="post-title-link" itemprop="url">Codeforces Round #738 (Div. 2)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-16 08:27:13" itemprop="dateCreated datePublished" datetime="2021-08-16T08:27:13Z">2021-08-16</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/CodeForces/" itemprop="url" rel="index"><span itemprop="name">CodeForces</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="codeforces-round-738-div.-2">Codeforces Round #738 (Div. 2)</h2>
-<p>statistics: problem solved: 4/6 realtime, 1 after contest.</p>
-<h4 id="c---mocha-and-hiking"><a
-target="_blank" rel="noopener" href="https://codeforces.com/contest/1559/problem/C"
-title="Codeforces Round 738 (Div. 2)">C - Mocha and Hiking</a></h4>
-<p>This problem is a partial proof that</p>
-<blockquote>
-<p>There always exists an Hamiltonian path in a tournament graph.</p>
-</blockquote>
-<h4 id="d2.-mocha-and-diana-hard-version"><em>D2. Mocha and Diana (Hard
-Version)</em></h4>
-<p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1559/problem/D2">Problem - D2
-- Codeforces</a></p>
-<p>Approach: greedy graph matching technique.</p>
-<p>First, try add all possible edge <span class="math inline">\((1,
-u)\)</span></p>
-<p>Then all nodes which are not in the same component as node 1 must be
-in the same component with node 1 in the second graph.</p>
-<p>Now we will consider nodes of two types, the ones that are in the
-same component than 1 in the first tree, and the ones that are in the
-same component than 1 in the second tree. We will store all nodes of
-type 1 in a stack p1, and all nodes of type 2 in a stack p2, and we will
-try to match them with the following algorithm.</p>
-<ul>
-<li><p>If the top of p1 is in the same component than 1 in both trees,
-delete it</p></li>
-<li><p>If the top of p2 is in the same component than 1 in both trees,
-delete it</p></li>
-<li><p>Otherwise, add an edge between the top of p1 and the top
-of p2.</p></li>
-</ul>
-<h4 id="e.-mocha-and-stars">E. Mocha and Stars</h4>
-<p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1559/problem/E">Problem - E -
-Codeforces</a></p>
-<p>Approach: Mobius Inversion (the good old gcd inversion)</p>
-<p><span class="math display">\[
-\begin{aligned}
-Ans=&amp; \sum_{l_i \le a_i \le r_i}[\sum a_i \le m][gcd(a_i) = 1]\\
-=&amp; \sum_d \mu(d)\sum_{l_i \le a_i \le r_i}[\sum a_i \le m][a_i|d]\\
-=&amp; \sum_d \mu(d) \sum_{\lceil\frac{l_i}{d} \rceil \le a_i \le
-\lfloor \frac{r_i}{d}\rfloor}[\sum a_i \le \lfloor\frac{m}{d}\rfloor]\\
-\end{aligned}
-\]</span></p>
-<p>the rest part is just some <span
-class="math inline">\([z^k]\frac{1}{(1 - z)^{n +
-1}}\prod(1-z^{k_i})\)</span>, which can be solved <span
-class="math inline">\(O(nk)\)</span> through DP</p>
-<p>Total time complexity:<span class="math inline">\(O(nm\ln
-m)\)</span></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2021/08/16/About/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="misaka18931">
-      <meta itemprop="description" content="notes & problem solving">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="misaka18931's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/08/16/About/" class="post-title-link" itemprop="url">About</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-08-15 21:09:18" itemprop="dateCreated datePublished" datetime="2021-08-15T21:09:18Z">2021-08-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
-      </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>An archive of my problem-solving/contests logs and notes, hosted
-preliminary for future references.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>

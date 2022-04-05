@@ -21,28 +21,27 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"misaka18931.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="一个和为\(0\)的随机序列\(\{a_n\}\), \(E(\max_i(\sum_{j\le  i}a_j))&#x3D;O(\sqrt N)\). 常用于DP, 通过随机化降低时间. 任意一个序列, 其中满足\(\max(A[l,r])\gt \max(A[l&#39;,r&#39;]),[l,r]\subsetneq [l&#39;,r&#39;]\)的极大子段个数是\(O(n)\)的. 求法:">
+<meta name="description" content="\[ v_p(n!)&#x3D;\sum_{k\ge1}\lfloor\frac{n}{p^k}\rfloor&#x3D;\frac{n-\mathrm{sum\_of\_digits}(n)}{p-1} \] thus \[ v_p(\binom {n+m}m) &#x3D; \#\text{lifting in p-ary addition n + m.} \] 3 上下都有限制的折线法: 可以反复映射,做到\(O(n+m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="fun facts about sequences">
-<meta property="og:url" content="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/index.html">
+<meta property="og:title" content="misc">
+<meta property="og:url" content="https://misaka18931.github.io/2022/03/23/misc/index.html">
 <meta property="og:site_name" content="misaka18931&#39;s blog">
-<meta property="og:description" content="一个和为\(0\)的随机序列\(\{a_n\}\), \(E(\max_i(\sum_{j\le  i}a_j))&#x3D;O(\sqrt N)\). 常用于DP, 通过随机化降低时间. 任意一个序列, 其中满足\(\max(A[l,r])\gt \max(A[l&#39;,r&#39;]),[l,r]\subsetneq [l&#39;,r&#39;]\)的极大子段个数是\(O(n)\)的. 求法:">
+<meta property="og:description" content="\[ v_p(n!)&#x3D;\sum_{k\ge1}\lfloor\frac{n}{p^k}\rfloor&#x3D;\frac{n-\mathrm{sum\_of\_digits}(n)}{p-1} \] thus \[ v_p(\binom {n+m}m) &#x3D; \#\text{lifting in p-ary addition n + m.} \] 3 上下都有限制的折线法: 可以反复映射,做到\(O(n+m">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-15T14:29:33.000Z">
-<meta property="article:modified_time" content="2022-02-24T12:56:40.869Z">
+<meta property="article:published_time" content="2022-03-23T13:54:16.000Z">
+<meta property="article:modified_time" content="2022-03-25T08:21:36.466Z">
 <meta property="article:author" content="misaka18931">
-<meta property="article:tag" content="observation">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/">
+<link rel="canonical" href="https://misaka18931.github.io/2022/03/23/misc/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/","path":"2022/02/15/fun-facts-about-sequences/","title":"fun facts about sequences"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://misaka18931.github.io/2022/03/23/misc/","path":"2022/03/23/misc/","title":"misc"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>fun facts about sequences | misaka18931's blog</title>
+<title>misc | misaka18931's blog</title>
   
 
 
@@ -160,18 +159,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-count">52</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-count">60</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -210,7 +209,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/">
+    <link itemprop="mainEntityOfPage" href="https://misaka18931.github.io/2022/03/23/misc/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -223,7 +222,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          fun facts about sequences
+          misc
         </h1>
 
         <div class="post-meta-container">
@@ -234,24 +233,15 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2022-02-15 14:29:33" itemprop="dateCreated datePublished" datetime="2022-02-15T14:29:33Z">2022-02-15</time>
+      <time title="Created: 2022-03-23 13:54:16" itemprop="dateCreated datePublished" datetime="2022-03-23T13:54:16Z">2022-03-23</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-02-24 12:56:40" itemprop="dateModified" datetime="2022-02-24T12:56:40Z">2022-02-24</time>
+        <time title="Modified: 2022-03-25 08:21:36" itemprop="dateModified" datetime="2022-03-25T08:21:36Z">2022-03-25</time>
       </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/misc/" itemprop="url" rel="index"><span itemprop="name">misc</span></a>
-        </span>
-    </span>
 
   
 </div>
@@ -263,21 +253,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <ol type="1">
-<li><p>一个和为<span class="math inline">\(0\)</span>的随机序列<span
-class="math inline">\(\{a_n\}\)</span>, <span
-class="math inline">\(E(\max_i(\sum_{j\le  i}a_j))=O(\sqrt N)\)</span>.
-常用于<code>DP</code>, 通过随机化降低时间.</p></li>
-<li><p>任意一个序列, 其中满足<span class="math inline">\(\max(A[l,r])\gt
-\max(A[l&#39;,r&#39;]),[l,r]\subsetneq
-[l&#39;,r&#39;]\)</span>的极大子段个数是<span
-class="math inline">\(O(n)\)</span>的. 求法: 单调栈</p></li>
-<li><p>对于一个排列, 对逆序对连边, 形成的连通块一定是区间.</p></li>
-<li><p>一个在<span
-class="math inline">\([0,1]\)</span>之间随机的实数序列, 长为<span
-class="math inline">\(n\)</span>, 则第k小数的期望 <span
-class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
-</ol>
+        <p><span class="math display">\[
+v_p(n!)=\sum_{k\ge1}\lfloor\frac{n}{p^k}\rfloor=\frac{n-\mathrm{sum\_of\_digits}(n)}{p-1}
+\]</span></p>
+<p>thus</p>
+<p><span class="math display">\[
+v_p(\binom {n+m}m) = \#\text{lifting in p-ary addition n + m.}
+\]</span> 3</p>
+<p>上下都有限制的折线法: 可以反复映射,做到<span
+class="math inline">\(O(n+m/(a+b))\)</span>的复杂度.2</p>
+<p>切比雪夫距离与曼哈顿距离转化</p>
+<p>区间DP套数位DP, WTF? 数位DP, 但上下界不独立:
+记录0/1/2表示顶上界/下界/自由选择</p>
+<p>多想想极限情况,最后再想推广</p>
 
     </div>
 
@@ -295,7 +283,7 @@ class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/" title="fun facts about sequences">https://misaka18931.github.io/2022/02/15/fun-facts-about-sequences/</a>
+      <a href="https://misaka18931.github.io/2022/03/23/misc/" title="misc">https://misaka18931.github.io/2022/03/23/misc/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-SA</a> unless stating additionally.
@@ -303,21 +291,18 @@ class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
 </ul>
 </div>
 
-          <div class="post-tags">
-              <a href="/tags/observation/" rel="tag"># observation</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/02/15/AtCoder-Regular-Contest-135/" rel="prev" title="AtCoder Regular Contest 135">
-                  <i class="fa fa-chevron-left"></i> AtCoder Regular Contest 135
+                <a href="/2022/03/18/ZROI-game/" rel="prev" title="ZROI-game">
+                  <i class="fa fa-chevron-left"></i> ZROI-game
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/02/16/JOI-2022-Final/" rel="next" title="JOI 2022 Final">
-                  JOI 2022 Final <i class="fa fa-chevron-right"></i>
+                <a href="/2022/04/05/Hall-s-Theorem/" rel="next" title="Hall's Theorem">
+                  Hall's Theorem <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -377,7 +362,7 @@ class="math inline">\(=\frac k {n+1}\)</span>.</p></li>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"c03e0a6dc5348066bd9f5dce6ccc65a6"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"misaka18931","repo":"misaka18931.github.io","client_id":"b9db2777e8deb68c2296","client_secret":"d7f468a69d82f5bc57ab434c56b4574466243640","admin_user":"misaka18931","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js","integrity":"sha256-Pmj85ojLaPOWwRtlMJwmezB/Qg8BzvJp5eTzvXaYAfA="},"path_md5":"1aad50266236cb8f1e0ab41f71d5ffab"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
