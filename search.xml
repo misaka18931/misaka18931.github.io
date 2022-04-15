@@ -66,28 +66,6 @@ convolution.</p>
       </categories>
   </entry>
   <entry>
-    <title>AtCoder Beginner Contest 217</title>
-    <url>/2021/09/06/ABC-217/</url>
-    <content><![CDATA[<h2 id="atcoder-beginner-contest-217">AtCoder Beginner Contest 217</h2>
-<p>Easiest ABC ever!</p>
-<h3 id="h---snuketoon"><a
-href="https://atcoder.jp/contests/abc217/tasks/abc217_h">H -
-Snuketoon</a></h3>
-<p>考虑维护最小伤害的函数<span class="math inline">\(f_n(x)\)</span></p>
-<p><span class="math display">\[
-f_i(x) = \underset{x-\Delta t \leq x_0 \leq x + \Delta t} {\min}
-f_{i-1}(x_0) + g_i(x)
-\]</span></p>
-<p>该函数为分段一次函数，且满足凸性，用<code>multiset</code>或者堆维护分段斜率即可。</p>
-]]></content>
-      <categories>
-        <category>AtCoder rounds</category>
-      </categories>
-      <tags>
-        <tag>Convex Hull</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AtCoder Beginner Contest 221</title>
     <url>/2021/10/07/ABC-221/</url>
     <content><![CDATA[<h1 id="atcoder-beginner-contest-221">AtCoder Beginner Contest 221</h1>
@@ -112,6 +90,28 @@ g_{k,s}\leftarrow_{i\lt m} g_{k-i,s-kj}
       <categories>
         <category>AtCoder rounds</category>
       </categories>
+  </entry>
+  <entry>
+    <title>AtCoder Beginner Contest 217</title>
+    <url>/2021/09/06/ABC-217/</url>
+    <content><![CDATA[<h2 id="atcoder-beginner-contest-217">AtCoder Beginner Contest 217</h2>
+<p>Easiest ABC ever!</p>
+<h3 id="h---snuketoon"><a
+href="https://atcoder.jp/contests/abc217/tasks/abc217_h">H -
+Snuketoon</a></h3>
+<p>考虑维护最小伤害的函数<span class="math inline">\(f_n(x)\)</span></p>
+<p><span class="math display">\[
+f_i(x) = \underset{x-\Delta t \leq x_0 \leq x + \Delta t} {\min}
+f_{i-1}(x_0) + g_i(x)
+\]</span></p>
+<p>该函数为分段一次函数，且满足凸性，用<code>multiset</code>或者堆维护分段斜率即可。</p>
+]]></content>
+      <categories>
+        <category>AtCoder rounds</category>
+      </categories>
+      <tags>
+        <tag>Convex Hull</tag>
+      </tags>
   </entry>
   <entry>
     <title>AGC problems</title>
@@ -302,22 +302,6 @@ class="math inline">\(\Delta\)</span>想办法把结论作为条件带回去继�
       </tags>
   </entry>
   <entry>
-    <title>AGC007</title>
-    <url>/2022/01/20/AGC007/</url>
-    <content><![CDATA[<h1 id="atcoder-grand-contest-003">AtCoder Grand Contest 003</h1>
-<h2 id="c---pushing-balls">C - Pushing Balls</h2>
-<p>期望是可以迭代的.
-推式子可以发现第一步操作以后的期望距离序列依然是等差数列,于是递归.</p>
-<h2 id="d---shik-and-game">D - Shik and Game</h2>
-<p>单调队列优化DP ## E - Shik and Travel
-二分+<code>DP</code>,将严格不优的状态去掉就能做到<span
-class="math inline">\(O(n\log n)\)</span>的状态数.</p>
-]]></content>
-      <categories>
-        <category>AGC Series</category>
-      </categories>
-  </entry>
-  <entry>
     <title>AGC006</title>
     <url>/2022/01/20/AGC006/</url>
     <content><![CDATA[<h1 id="atcoder-grand-contest-006">AtCoder Grand Contest 006</h1>
@@ -353,6 +337,22 @@ class="math inline">\((d(x,z)\mod 3)\)</span>有关. 如果把图3-染色,
         <tag>permutations</tag>
         <tag>math</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>AGC007</title>
+    <url>/2022/01/20/AGC007/</url>
+    <content><![CDATA[<h1 id="atcoder-grand-contest-003">AtCoder Grand Contest 003</h1>
+<h2 id="c---pushing-balls">C - Pushing Balls</h2>
+<p>期望是可以迭代的.
+推式子可以发现第一步操作以后的期望距离序列依然是等差数列,于是递归.</p>
+<h2 id="d---shik-and-game">D - Shik and Game</h2>
+<p>单调队列优化DP ## E - Shik and Travel
+二分+<code>DP</code>,将严格不优的状态去掉就能做到<span
+class="math inline">\(O(n\log n)\)</span>的状态数.</p>
+]]></content>
+      <categories>
+        <category>AGC Series</category>
+      </categories>
   </entry>
   <entry>
     <title>AGC020</title>
@@ -1409,6 +1409,12 @@ href="https://www.ioi-jp.org/camp/2022/2022-sp-tasks/contest3/sugar-en.pdf">JOIS
       </tags>
   </entry>
   <entry>
+    <title>Hello 2022</title>
+    <url>/2022/01/01/Hello-2022/</url>
+    <content><![CDATA[
+]]></content>
+  </entry>
+  <entry>
     <title>JOI 2022 Final</title>
     <url>/2022/02/16/JOI-2022-Final/</url>
     <content><![CDATA[<h1 id="joi-2022-final">JOI 2022 Final</h1>
@@ -1460,12 +1466,6 @@ class="math inline">\(1\)</span>个.</p>
         <tag>Inclusion-Exclusion Principle</tag>
         <tag>Binary Search</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello 2022</title>
-    <url>/2022/01/01/Hello-2022/</url>
-    <content><![CDATA[
-]]></content>
   </entry>
   <entry>
     <title>JOISC 2022</title>
@@ -1592,13 +1592,13 @@ contribution. And once again, we have strong locality guaranteed.<br />
 number of sugar inserted.<br />
 </li>
 <li>to handle the gap between nodes, we can record for each node, sugars
-that affect the gap between it's two childrens.<br />
-## day4<br />
-### dango3<br />
-### fish2<br />
-### reconstruction</li>
+that affect the gap between it's two childrens.</li>
 </ol></li>
 </ol>
+<h2 id="day4">day4</h2>
+<h3 id="dango3">dango3</h3>
+<p>devide and conquer. ### fish2</p>
+<h3 id="reconstruction">reconstruction</h3>
 ]]></content>
       <tags>
         <tag>observation</tag>
@@ -1863,6 +1863,9 @@ vim. Instead, see the compiler logs.</p></li>
 <li><p>backup source file before massive modifications.</p></li>
 <li><p>use vim with a calm mind to prevent disasters.</p></li>
 </ul>
+<h2 id="update">Update</h2>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">O</span><span class="params">(<span class="keyword">const</span> T &amp;x)</span> </span>&#123; cout &lt;&lt; x &lt;&lt; <span class="string">&#x27;\n&#x27;</span>; &#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... W&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">O</span><span class="params">(<span class="keyword">const</span> T &amp;x, <span class="keyword">const</span> W &amp;...b)</span> </span>&#123;</span><br><span class="line">  cout &lt;&lt; x &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">  <span class="built_in">O</span>(b...);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MISAKA</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> err(...)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> err(...) fprintf(stderr, __VA_ARGS__)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> i64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> u64;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> u32;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">double</span> dbl;</span><br><span class="line"><span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt; pii;</span><br><span class="line"><span class="keyword">typedef</span> uniform_int_distribution&lt;<span class="keyword">int</span>&gt; r32;</span><br><span class="line"><span class="keyword">typedef</span> uniform_int_distribution&lt;i64&gt; r64;</span><br><span class="line"><span class="function">mt19937_64 <span class="title">rng</span><span class="params">(chrono::steady_clock::now().time_since_epoch().count())</span></span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> shuf(L, R) shuffle((L), (R), rng)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> fi first</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> se second</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pb push_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> eb emplace_back</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> FOR(i, j, k) for (int i = (j); i &lt;= (k); ++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ROF(i, j, k) for (int i = (k); i &gt;= (j); --i)</span></span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">ckmin</span><span class="params">(T &amp;a, <span class="keyword">const</span> T &amp;b)</span> </span>&#123; a = <span class="built_in">min</span>(a, b); &#125;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">ckmax</span><span class="params">(T &amp;a, <span class="keyword">const</span> T &amp;b)</span> </span>&#123; a = <span class="built_in">max</span>(a, b); &#125;</span><br><span class="line"><span class="comment">//#define IOFILE &quot;filename&quot;</span></span><br><span class="line"><span class="comment">//#define MULTI</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">void</span> <span class="title">sol</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">//</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> MISAKA</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> IOFILE</span></span><br><span class="line">  <span class="built_in">freopen</span>(IOFILE <span class="string">&quot;.in&quot;</span>, <span class="string">&quot;r&quot;</span>, stdin);</span><br><span class="line">  <span class="built_in">freopen</span>(IOFILE <span class="string">&quot;.out&quot;</span>, <span class="string">&quot;w&quot;</span>, stdout);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">  ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">  cin.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> MULTI</span></span><br><span class="line">  <span class="keyword">int</span> T;</span><br><span class="line">  cin &gt;&gt; T;</span><br><span class="line">  <span class="keyword">while</span> (T--)</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">    <span class="built_in">sol</span>();</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">syntax</span> <span class="keyword">on</span></span><br><span class="line"><span class="keyword">set</span> expandtab softtabstop=<span class="number">2</span> <span class="built_in">shiftwidth</span>=<span class="number">2</span></span><br><span class="line"><span class="keyword">set</span> ai <span class="built_in">cindent</span> copyindent</span><br><span class="line"><span class="keyword">set</span> mouse=<span class="keyword">a</span></span><br><span class="line"><span class="comment">&quot;set number relativenumber</span></span><br><span class="line"><span class="keyword">autocmd</span> BufWritePost *.cpp :!g++ -Wall -Wextra -Wconversion -fsanitize=undefined -g -DMISAKA %:<span class="keyword">p</span> -<span class="keyword">o</span> %:<span class="keyword">p</span>:r</span><br><span class="line"><span class="keyword">autocmd</span> BufNewFile *.cpp <span class="number">0</span>r ~/misaka-<span class="keyword">cp</span>/template/contest.cpp</span><br><span class="line"><span class="keyword">nmap</span> S :s//g<span class="symbol">&lt;left&gt;</span><span class="symbol">&lt;left&gt;</span></span><br><span class="line"><span class="keyword">inoremap</span> <span class="string">&#x27; &#x27;</span><span class="string">&#x27;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &quot; &quot;&quot;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123; &#123;&#125;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap ( ()&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap [ []&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123; &#123;&#125;&lt;left&gt;</span></span><br><span class="line"><span class="string">inoremap &#123;&lt;CR&gt; &#123;&lt;CR&gt;&#125;&lt;ESC&gt;O</span></span><br><span class="line"><span class="string">inoremap &quot;&quot; &quot;</span></span><br><span class="line"><span class="string">inoremap &#x27;</span><span class="string">&#x27; &#x27;</span></span><br><span class="line"><span class="keyword">inoremap</span> [[ [</span><br><span class="line"><span class="keyword">inoremap</span> (( (</span><br><span class="line"><span class="keyword">inoremap</span> &#123;&#123; &#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; extra</span></span><br><span class="line"><span class="keyword">map</span> <span class="symbol">&lt;F5&gt;</span> :!xclip -selection <span class="keyword">c</span> -<span class="keyword">o</span>\|%:<span class="keyword">p</span>:r<span class="symbol">&lt;CR&gt;</span></span><br><span class="line"><span class="keyword">map</span> <span class="symbol">&lt;silent&gt;</span> <span class="symbol">&lt;F6&gt;</span> :<span class="keyword">w</span> !xclip -selection <span class="keyword">c</span><span class="symbol">&lt;CR&gt;</span><span class="symbol">&lt;CR&gt;</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
